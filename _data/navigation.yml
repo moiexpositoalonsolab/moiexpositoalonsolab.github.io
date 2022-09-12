@@ -1,22 +1,20 @@
 # main links links
 main:
+  - title: "About the Project"
+    url: /aboutproject/
+
+  - title: "The Team"
+    url: /Team/    
+
   - title: "Publications"
-    url: /publications/
-
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
+    url: /publications/    
     
-  - title: "Portfolio"
-    url: /portfolio/
+  - title: "Results"
+    url: /results/
         
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "Data"
+    url: /data/
     
-  - title: "CV"
-    url: /cv/
+  - title: "Contact us"
+    url: /contact/
     
-  - title: "Guide"
-    url: /markdown/
