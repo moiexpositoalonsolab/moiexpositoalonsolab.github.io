@@ -14,7 +14,12 @@ main:
         
   - title: "News"
     url: /year-archive/
+
+  - title: "The Grene R Package"
+    url: /grenerpackage/
     
   - title: "Download Data"
-    url: /cv/
+    url: /datadownload/
+
+
     
