@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to GrENE net Project!"
+title: "Welcome to the GrENE net Project!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -9,3 +9,4 @@ redirect_from:
 ---
 
 whatever whatever
+![Drag Racing](../images/landing.png)
