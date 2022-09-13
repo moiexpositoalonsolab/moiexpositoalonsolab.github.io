@@ -8,5 +8,7 @@ redirect_from:
   - /about.html
 ---
 
+{% include map_participants.html %} ß
+
 whatever whatever
 ![Drag Racing](../images/landing.png)
