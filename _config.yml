@@ -80,9 +80,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "GrENE net: Genomics of Rapid Evolution in Novel Environments"
+  name             : "GrENE net"
   avatar           : "profile.png"
-  bio              : "A coordinated Distributed Global evolution Experiment"
+  bio              : "Genomics of Rapid Evolution in Novel Environments"
   location         : "All over the world"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -309,3 +309,8 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
