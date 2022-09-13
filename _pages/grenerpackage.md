@@ -1,9 +1,9 @@
 ---
 permalink: /grenerpackage/
-title: "Markdown"
+title: "The grene R package"
 author_profile: true
 redirect_from: 
-  - /md/
+  - /grenerpackage/
   - /markdown.html
 ---
 
