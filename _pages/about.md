@@ -8,8 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-All the sites where Arabidopsis has been growing
+All the sites where Arabidopsis has been growing for the past 4 years!
 {% include map_participants_exp_duration.html %} 
+
+&nbsp
 
 Number of flowers collected across the years 
 {% include map_participants_number_flowers_collected.html %} 
