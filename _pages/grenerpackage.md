@@ -4,7 +4,7 @@ title: "The grene R package"
 permalink: /grenerpackage/
 author_profile: true
 redirect_from:
-  - /resume
+  - /grenerpackage
 ---
 
 
