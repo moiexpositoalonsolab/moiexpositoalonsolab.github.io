@@ -2,8 +2,8 @@
 title: "grenepipe: A flexible, scalable, and reproducible pipeline to automate variant and frequency calling from sequence reads"
 collection: publications
 permalink: /publication/grenepipe
-excerpt: #
-date: '2022-02-09'
+excerpt: ''
+date: 2022-02-09
 venue: 'Bioinformatics'
 paperurl: 'https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac600/6687127'
 citation: 'grenepipe: A flexible, scalable, and reproducible pipeline to automate variant and frequency calling from sequence reads

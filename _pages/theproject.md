@@ -11,8 +11,9 @@ There is now plenty of evidence that evolution can be a rapid process. Understan
 
 Last century’s breakthrough in evolutionary theory amounted to the focus on genetics as the basis of evolution and the redefinition of evolution in terms of allele frequency changes (Figure 1), influenced by neutral as well as selective forces (Fisher 1930; Wright 1942; Huxley 1942). Nowadays, well within the genomic era, our challenge is to experimentally demonstrate and extend those works by monitoring changes in allele frequencies in evolution experiments over multiple generations and selective environments in nature (e.g. Elena & Lenski 2003).
 
+
 <p align="center">
-![study_site_tub](../images/positive_selection10.png)
+  <img src="../images/positive_selection10.png" />
 </p>
 *Allele frequency trajectories in a simulated Wright-Fisher population under drift and with 10 alleles naturally selected*
 
