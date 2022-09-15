@@ -11,14 +11,16 @@ There is now plenty of evidence that evolution can be a rapid process. Understan
 
 Last century’s breakthrough in evolutionary theory amounted to the focus on genetics as the basis of evolution and the redefinition of evolution in terms of allele frequency changes (Figure 1), influenced by neutral as well as selective forces (Fisher 1930; Wright 1942; Huxley 1942). Nowadays, well within the genomic era, our challenge is to experimentally demonstrate and extend those works by monitoring changes in allele frequencies in evolution experiments over multiple generations and selective environments in nature (e.g. Elena & Lenski 2003).
 
+<p align="center">
 ![study_site_tub](../images/positive_selection10.png)
+</p>
 *Allele frequency trajectories in a simulated Wright-Fisher population under drift and with 10 alleles naturally selected*
 
 With this aim, we are setting up a coordinated distributed experiment in which populations of the model plant Arabidopsis thaliana consisting of c. 200 sequenced ecotypes (1001 Genomes Consortium 2016) will be sown into replicated plots in different sites around the globe. By incorporating many sites with a broad range of environmental conditions, from southern Spain to the Scandinavian arctic, and by tracing the ecotype composition over multiple years by means of sequencing, we aim to gain insight into the roles of environmental variables in shaping temporal dynamics and spatial variation of population genomics.
 
 We will apply pool-sequencing of plants throughout their reproductive stage to identify successful ecotypes, their phenological timing, and their genomic makeup. As predicted by local adaptation theory, we expect that success under certain temperature, moisture and soil composition will be related to the environment of origin and phenotypic characteristics of each ecotype. However, in contrast with other common garden experiments, we will directly measure the dynamics of natural selection and adaptation to each of the environments where the experiment is taking place.
 
-![study_site_tub](../images/tray_experiment_webp.png)
+![study_site_tub](../images/tray_experiment.webp.png)
 *Exemplary evolution experiment plot with Arabidopsis thaliana plants*
 
 # The Protocol
