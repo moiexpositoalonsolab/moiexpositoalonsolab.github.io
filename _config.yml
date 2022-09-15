@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "GrENE net Project"
+title                    : "GrENE net"
 title_separator          : "-"
 name                     : &name ""
 description              : &description "personal description"
