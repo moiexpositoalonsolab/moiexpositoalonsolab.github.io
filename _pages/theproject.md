@@ -21,7 +21,7 @@ With this aim, we are setting up a coordinated distributed experiment in which p
 
 We will apply pool-sequencing of plants throughout their reproductive stage to identify successful ecotypes, their phenological timing, and their genomic makeup. As predicted by local adaptation theory, we expect that success under certain temperature, moisture and soil composition will be related to the environment of origin and phenotypic characteristics of each ecotype. However, in contrast with other common garden experiments, we will directly measure the dynamics of natural selection and adaptation to each of the environments where the experiment is taking place.
 
-![study_site_tub](../images/tray_experiment.webp.png)
+![study_site_tub](../images/tray_experiment.png)
 *Exemplary evolution experiment plot with Arabidopsis thaliana plants*
 
 # The Protocol
