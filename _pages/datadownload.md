@@ -11,7 +11,7 @@ redirect_from:
 
 ## Project Metada Structure
 
-![Drag Racing](../images/metadata_erd.png.png)
+![Drag Racing](../images/metadata_erd.png)
 
 The detailed structure is part of the Grene Package. Here some detailes about the tables: 
 
