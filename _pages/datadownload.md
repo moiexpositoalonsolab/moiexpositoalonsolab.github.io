@@ -21,8 +21,7 @@ All the metadata relevant to the GrENE-net project can be found in the [GreneR P
 - locations_data: this table includes information about the 45 locations where Arabidopsis were plantes all over the world <br> 
 - worldclim_sitesdata: this table includes climatic variables for all  the sites where Arabidopsis was plantes <br> 
 
-Datasets that you can directly download: 
-## Tables
+## Datasets that you can directly download: 
 
 | Name            |  Download                                                             |
 | --------         | ------------------------------------------------------------ |
@@ -34,6 +33,6 @@ Datasets that you can directly download:
 | Climate Data from sites   |     <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/sites.clim.tsv'>Climate Data Download</a>     |
 | Raw counts of map reads per library   |   Soon to come!       |
 | NCBI fastq files   |    Soon to come!      |
-| fst parameters related to the starting population   |     Soon to come!     |
+| Fst parameters related to the starting population   |     Soon to come!     |
 | Clean alleles frequencies  |   Soon to come!      |
 
