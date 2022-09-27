@@ -1,7 +1,5 @@
 # main links links
 main:
-  - title: "About the Project"
-    url: /abouttheproject/
 
   - title: "The Team"
     url: /team/    
