@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Data Download"
-permalink: /datadownload/
+title: "Data Structure and Download"
+permalink: /data/
 author_profile: true
 redirect_from:
   - /resume
@@ -9,11 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-## Project Metada Structure
+All the metadata relevant to the GrENE-net project can be found in the [GreneR Package](https://github.com/moiexpositoalonsolab/grene). Here some detailes about the metadata structure: 
 
 ![Drag Racing](../images/metadata_erd.png)
-
-The detailed structure is part of the GreneR Package. Here some detailes about the tables: 
 
 - census_data: this table includes meassurments collected by the participants used to estiamte the population size of each plot<br> 
 - samples_data: this table include the record of all the flowers sampled across the years  <br> 
@@ -23,8 +21,7 @@ The detailed structure is part of the GreneR Package. Here some detailes about t
 - locations_data: this table includes information about the 45 locations where Arabidopsis were plantes all over the world <br> 
 - worldclim_sitesdata: this table includes climatic variables for all  the sites where Arabidopsis was plantes <br> 
 
-
-Relevant Datasets to the GrENE-net Project that you can download 
+Datasets that you can directly download: 
 ## Tables
 
 | Name            |  Download                                                             |
