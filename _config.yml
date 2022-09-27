@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "GrENE net"
+title                    : "GrENE-net"
 title_separator          : "-"
 name                     : &name ""
 description              : &description "personal description"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "GrENE net"
+  name             : "GrENE-net"
   avatar           : "profile.png"
   bio              : "Genomics of Rapid Evolution in Novel Environments"
   location         : "All over the world"
