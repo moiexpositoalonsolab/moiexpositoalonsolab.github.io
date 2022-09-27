@@ -28,11 +28,15 @@ Participants will receive seed mixtures of c. 200 natural accessions of Arabidop
 <br/><br/>
 </div>
 
-![Drag Racing](../images/landing.png)
+
 
 # Gist of the experiment
 
+![Drag Racing](../images/gist.png)
+
 There is now plenty of evidence that evolution can be a rapid process. Understanding how rapid evolutionary processes occur in nature is of utmost relevance to investigate adaptation to rapid climate change, which has already been documented for many species at the level of phenological and distribution range shifts (Parmesan & Yohe 2003; Franks et al. 2007; Charmantier et al. 2008; Hoffmann & Sgro 2011).
+
+
 
 Last century’s breakthrough in evolutionary theory amounted to the focus on genetics as the basis of evolution and the redefinition of evolution in terms of allele frequency changes (Figure 1), influenced by neutral as well as selective forces (Fisher 1930; Wright 1942; Huxley 1942). Nowadays, well within the genomic era, our challenge is to experimentally demonstrate and extend those works by monitoring changes in allele frequencies in evolution experiments over multiple generations and selective environments in nature (e.g. Elena & Lenski 2003).
 
@@ -64,7 +68,7 @@ Read the full policy and ethics statement [here](https://docs.google.com/documen
 Note on post-experiment handling of genetic material:
 
 Uncontrolled transplant experiments can lead to genetic contamination of local populations (Rogers & Siemann 2004; Saltonstall K 2002) and to species invasions (Seebens et al. 2017). Although A. thaliana is a cosmopolitan plant native or naturalized to all countries where GrENE-net experiments are carried out, we ask participants to grow their replicate populations in a controlled area, preferably an institution’s ground, free from natural A. thaliana populations. Furthermore, after the experiment all used soil and plant material will be incinerated and a treatment herbicide will be used in a secured perimeter to eliminate any trace of planted seeds, as has been done before in similar outdoor experiments (Exposito-Alonso et al. 2017; Exposito-Alonso et al. 2018).
-
+ 
 
 References:
 
