@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "The grene R package"
+title: "The greneR package"
 permalink: /grenerpackage/
 author_profile: true
 redirect_from:

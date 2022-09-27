@@ -13,7 +13,7 @@ redirect_from:
 
 ![Drag Racing](../images/metadata_erd.png)
 
-The detailed structure is part of the Grene Package. Here some detailes about the tables: 
+The detailed structure is part of the GreneR Package. Here some detailes about the tables: 
 
 - census_data: this table includes meassurments collected by the participants used to estiamte the population size of each plot<br> 
 - samples_data: this table include the record of all the flowers sampled across the years  <br> 
