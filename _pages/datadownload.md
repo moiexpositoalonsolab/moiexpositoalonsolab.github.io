@@ -31,10 +31,10 @@ Relevant Datasets to the GrENE-net Project that you can download
 | --------         | ------------------------------------------------------------ |
 | Census Data  |  <a id="raw-url" href="https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/census.tsv">Census Data Download</a>|
 | Samples Data  | <a id="raw-url" href="https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/records.tsv">Samples Data Download</a>|
-| Ecotypes Data    |  <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.tsv'>Census Data Download</a> |    
-| Climate Data from ecotypes    |    <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.clim.tsv'>Census Data Download</a>      |
-| Sites Data    |    <a id="raw-url" href='https://github.com/moiexpositoalonsolab/grene/blob/master/data/sitesinfo.rda'>Census Data Download</a>      |
-| Climate Data from sites   |     <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/sites.clim.tsv'>Census Data Download</a>     |
+| Ecotypes Data    |  <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.tsv'>Ecotypes Data Download</a> |    
+| Climate Data from ecotypes    |    <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.clim.tsv'>Climate Data Download</a>      |
+| Sites Data    |    <a id="raw-url" href='https://github.com/moiexpositoalonsolab/grene/blob/master/data/sitesinfo.rda'>Sites Data Download</a>      |
+| Climate Data from sites   |     <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/sites.clim.tsv'>Climate Data Download</a>     |
 | Raw counts of map reads per library   |   Soon to come!       |
 | NCBI fastq files   |    Soon to come!      |
 | fst parameters related to the starting population   |     Soon to come!     |
