@@ -14,11 +14,15 @@ All the sites where Arabidopsis has been growing for the past 4 years!
 <br/><br/>
 
 Number of flowers collected across the years 
-{% include flowers_collected_across_years.html %} 
 
-<br/><br/>
-
-{% include map_participants_number_flowers_collected.html %} 
+<div class="row">
+  <div class="col-md-8" markdown="1">
+  {% include flowers_collected_across_years.html %} 
+  </div>
+  <div class="col-md-4" markdown="1">
+  {% include map_participants_number_flowers_collected.html %} 
+  </div>
+</div>
 
 <br/><br/>
 
