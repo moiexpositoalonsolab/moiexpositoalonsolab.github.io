@@ -10,7 +10,7 @@ main:
     url: /publications/    
         
   - title: "News"
-    url: /year-archive/
+    url: /news/
 
   - title: "The Grene R Package"
     url: /grenerpackage/
