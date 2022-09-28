@@ -84,7 +84,8 @@ author:
   avatar           : "profile.png"
   bio              : "Genomics of Rapid Evolution in Novel Environments"
   location         : "All over the world"
-  employer         : https://www.moisesexpositoalonso.org/
+  employer         : 
+  website          : [MOI LAB](https://www.moisesexpositoalonso.org/)
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
   email            :
