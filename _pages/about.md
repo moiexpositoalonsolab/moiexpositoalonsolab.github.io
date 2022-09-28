@@ -26,16 +26,16 @@ Evolution by means of natural selection is the core theme in evolutionary resear
 
 <p align="center">
   <img src="../images/positive_selection10.png" />
-  *Allele frequency trajectories in a simulated Wright-Fisher population under drift and with 10 alleles naturally selected*
 </p>
 
+*Allele frequency trajectories in a simulated Wright-Fisher population under drift and with 10 alleles naturally selected*
 
 <br/><br/>
 GrENE-net – Genomics of rapid Evolution in Novel Environments – is set up as a coordinated distributed experiment with Arabidopsis thaliana. Its aim is to combine efforts to conduct a large evolution experiment . We invited researchers from across the globe to participate in GrENE-net.
 <br/><br/>
 Participants received seed mixtures of c. 200 natural accessions of Arabidopsis thaliana which they sowed into small replicated plots. Every year, participants sampled plant material used for genome pool-sequencing throughout their reproductive stage which allowed us to track changes in the abundances of alleles and accessions. Coupled with weather and soil data, we aim to unravel the process of adaptation to these important environmental variables. Our selection experiment will thus increase understanding of how the environment, plant phenotypes and their genetic makeup are linked together and about the evolutionary dynamics behind it. As predicted by local adaptation theory, we expect that success under certain temperature, moisture and soil composition will be related to the environment of origin and phenotypic characteristics of each ecotype.
 <br/><br/>
-</div>
+
 
 ![Drag Racing](../images/gist.png)
 
@@ -59,3 +59,4 @@ Read the full policy and ethics statement [here](https://docs.google.com/documen
 Note on post-experiment handling of genetic material:
 
 Uncontrolled transplant experiments can lead to genetic contamination of local populations and to species invasions. Although A. thaliana is a cosmopolitan plant native or naturalized to all countries where GrENE-net experiments are carried out, we ask participants to grow their replicate populations in a controlled area, preferably an institution’s ground, free from natural A. thaliana populations. Furthermore, after the experiment all used soil and plant material will be incinerated and a treatment herbicide will be used in a secured perimeter to eliminate any trace of planted seeds, as has been done before in similar outdoor experiments.
+</div>
