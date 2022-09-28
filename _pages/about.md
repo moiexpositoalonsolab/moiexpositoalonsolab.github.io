@@ -18,7 +18,7 @@ Number of flowers collected across the years
 {% include map_participants_number_flowers_collected.html %} 
 {% include flowers_collected_across_years.html %} 
 
-<br/><br/>
+
 
 <div align="justify">
 
