@@ -84,13 +84,12 @@ author:
   avatar           : "profile.png"
   bio              : "Genomics of Rapid Evolution in Novel Environments"
   location         : "All over the world"
-  employer         : 
-  website          : [MOI LAB](https://www.moisesexpositoalonso.org/)
+  employer         : https://www.moisesexpositoalonso.org/
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : #"http://yourfullgooglescholarurl.com"
-  email            :
+  email            :  https://www.moisesexpositoalonso.org/
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : https://www.moisesexpositoalonso.org/
   bitbucket        :
   codepen          :
   dribbble         :
@@ -98,7 +97,7 @@ author:
   facebook         :
   foursquare       :
   github           : "moiexpositoalonsolab/grene"
-  google_plus      :
+  google_plus      : 
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
