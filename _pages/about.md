@@ -26,8 +26,9 @@ Evolution by means of natural selection is the core theme in evolutionary resear
 
 <p align="center">
   <img src="../images/positive_selection10.png" />
+  *Allele frequency trajectories in a simulated Wright-Fisher population under drift and with 10 alleles naturally selected*
 </p>
-*Allele frequency trajectories in a simulated Wright-Fisher population under drift and with 10 alleles naturally selected*
+
 
 <br/><br/>
 GrENE-net – Genomics of rapid Evolution in Novel Environments – is set up as a coordinated distributed experiment with Arabidopsis thaliana. Its aim is to combine efforts to conduct a large evolution experiment . We invited researchers from across the globe to participate in GrENE-net.
