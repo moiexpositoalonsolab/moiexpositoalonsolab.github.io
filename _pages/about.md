@@ -70,6 +70,7 @@ And the number of flower samples collected across the years.
 <!-- ![study_site_tub](../images/study_site_tub.png)
 *Photo of the study site in Tubingen, Germany (2017)* -->
 
+ <br/><br/>
 
 # Protocols, policy and ethics statement
 
@@ -81,4 +82,4 @@ Note on post-experiment handling of genetic material:
 
 Uncontrolled transplant experiments can lead to genetic contamination of local populations and to species invasions. Although A. thaliana is a cosmopolitan plant native or naturalized to all countries where GrENE-net experiments are carried out, we ask participants to grow their replicate populations in a controlled area, preferably an institution’s ground, free from natural A. thaliana populations. Furthermore, after the experiment all used soil and plant material will be incinerated and a treatment herbicide will be used in a secured perimeter to eliminate any trace of planted seeds, as has been done before in similar outdoor experiments.
 
-Read the protocol to terminate experiments [here](  ).
+Read the protocol to terminate experiments [here]( https://docs.google.com/document/d/1hZWsNKu3NvudOqtp4dseGlwC7XDXAEKCujz7NGrLXoc/edit?usp=sharing ).
