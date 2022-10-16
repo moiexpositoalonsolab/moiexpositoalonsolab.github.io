@@ -8,51 +8,71 @@ redirect_from:
   - /about.html
 ---
 
-All the sites where Arabidopsis has been growing for the past 4 years!
+The paradigm that evolution of species is a gradual, slow process, has been challenged. There are plenty of examples, from mammals, birds, plants, insects, that evolution can be rapid. However, we are still still struggling to understand whether the genetic underpinnings and architecture of such rapid adaptations are predictable, especially in novel future climates.
+
+With a large network of collaborators (see *Team*), we are creating a benchmark experiment to test and predict rapid evolution across climates of multiple continents. This network is called GrENE-net – Genomics of rapid Evolution in Novel Environments – and is set up as a coordinated distributed experiment with _Arabidopsis thaliana_. 
+
+
+We invited researchers to participate in GrENE-net. Participants received seed mixtures of c. 200 natural accessions of _Arabidopsis thaliana_ which they sowed into small replicated plots in 2017. These have been evolving without interference besides minimal sampling. 
+
+Every year, participants sampled plant material (one flower per successful individual) used for genome pool-sequencing throughout their reproductive stage which allowed us to track changes in the abundances of alleles and accessions. Coupled with weather and soil data, we aim to unravel the process of adaptation to different climates by directly observing it in time.
+
+
+Exemplary evolution experiment plot with Arabidopsis thaliana plants
+<p align="center">
+  <img src="../images/tray_experiment.png" />
+</p>
+<!-- ![study_site_tub](../images/tray_experiment.png) -->
+
+Photo of the study site in Tubingen, Germany (2017)
+<p align="center">
+  <img src="../images/study_site_tub.png" />
+</p>
+<!-- ![study_site_tub](../images/study_site_tub.png) -->
+
+
+The map of all the samples of growing populations for the first 3 years is below.
+
 {% include map_participants_exp_duration.html %} 
 
 <br/><br/>
 
-Number of flowers collected across the years 
+And the number of flower samples collected across the years.
 
 {% include map_participants_number_flowers_collected.html %} 
-{% include flowers_collected_across_years.html %} 
+
+<!-- {% include flowers_collected_across_years.html %}  -->
 
 
+<!-- <div align="justify"> -->
 
-<div align="justify">
+<!-- Evolution by means of natural selection is the core theme in evolutionary research. Recently, the recognition that rapid evolutionary processes occur widely in nature gave impetus to investigate adaptation of populations to their immediate environmental conditions. Understanding how rapid evolutionary processes occur in nature is of utmost relevance to investigate adaptation to rapid climate change, which has already been documented for many species at the level of phenological and distribution range shifts. Experimental evolution, where evolution is studied in action rather than as the outcome of past processes, is the gold standard in evolutionary research. Such endeavours will yield valuable insight into the process of adaptation. -->
 
-Evolution by means of natural selection is the core theme in evolutionary research. Recently, the recognition that rapid evolutionary processes occur widely in nature gave impetus to investigate adaptation of populations to their immediate environmental conditions. Understanding how rapid evolutionary processes occur in nature is of utmost relevance to investigate adaptation to rapid climate change, which has already been documented for many species at the level of phenological and distribution range shifts. Experimental evolution, where evolution is studied in action rather than as the outcome of past processes, is the gold standard in evolutionary research. Such endeavours will yield valuable insight into the process of adaptation.
-
-<p align="center">
+<!-- <p align="center">
   <img src="../images/positive_selection10.png" />
-</p>
+</p> -->
 
-*Allele frequency trajectories in a simulated Wright-Fisher population under drift and with 10 alleles naturally selected*
-
-<br/><br/>
-GrENE-net – Genomics of rapid Evolution in Novel Environments – is set up as a coordinated distributed experiment with Arabidopsis thaliana. Its aim is to combine efforts to conduct a large evolution experiment . We invited researchers from across the globe to participate in GrENE-net.
-<br/><br/>
-Participants received seed mixtures of c. 200 natural accessions of Arabidopsis thaliana which they sowed into small replicated plots. Every year, participants sampled plant material used for genome pool-sequencing throughout their reproductive stage which allowed us to track changes in the abundances of alleles and accessions. Coupled with weather and soil data, we aim to unravel the process of adaptation to these important environmental variables. Our selection experiment will thus increase understanding of how the environment, plant phenotypes and their genetic makeup are linked together and about the evolutionary dynamics behind it. As predicted by local adaptation theory, we expect that success under certain temperature, moisture and soil composition will be related to the environment of origin and phenotypic characteristics of each ecotype.
-<br/><br/>
+<!-- *Allele frequency trajectories in a simulated Wright-Fisher population under drift and with 10 alleles naturally selected* -->
 
 
-![Drag Racing](../images/gist.png)
+ <br/><br/>
 
+<!-- ![Drag Racing](../images/gist.png) -->
 
-
+<!-- 
 # Gist of the experiment
 
 ![study_site_tub](../images/tray_experiment.png)
-*Exemplary evolution experiment plot with Arabidopsis thaliana plants*
-
-You can find the general GrENE-net protocol [here](https://docs.google.com/document/d/1HgfTmbjjK6SA6mH916kBzQlJRJXCqWVc6YfpK8VqRXc/edit).
-
-![study_site_tub](../images/study_site_tub.png)
-*Photo of the study site in Tubingen, Germany (2017)*
+*Exemplary evolution experiment plot with Arabidopsis thaliana plants* -->
 
 
-# Policy and ethics statement
+<!-- ![study_site_tub](../images/study_site_tub.png)
+*Photo of the study site in Tubingen, Germany (2017)* -->
+
+
+# Protocols, policy and ethics statement
+
+ You can find the general GrENE-net protocol [here](https://docs.google.com/document/d/1HgfTmbjjK6SA6mH916kBzQlJRJXCqWVc6YfpK8VqRXc/edit).
 
 Read the full policy and ethics statement [here](https://docs.google.com/document/d/1S_t-mv_uTobVVQD3Jy4xFg89vn-JgrEAXXC1cmC2NBQ/edit).
 
