@@ -10,7 +10,7 @@ redirect_from:
 
 The paradigm that evolution of species is a gradual, slow process, has been challenged. There are plenty of examples, from mammals, birds, plants, insects, that evolution can be rapid. However, we are still still struggling to understand whether the genetic underpinnings and architecture of such rapid adaptations are predictable, especially in novel future climates.
 
-With a large network of collaborators (see *Team*), we are creating a benchmark experiment to test and predict rapid evolution across climates of multiple continents. This network is called GrENE-net – Genomics of rapid Evolution in Novel Environments – and is set up as a coordinated distributed experiment with _Arabidopsis thaliana_. 
+With a large network of collaborators (see [*Team*](http://grene-net.org/team/)), we are creating a benchmark experiment to test and predict rapid evolution across climates of multiple continents. This network is called GrENE-net – Genomics of rapid Evolution in Novel Environments – and is set up as a coordinated distributed experiment with _Arabidopsis thaliana_. 
 
 ![Drag Racing](../images/gist.png)
 
@@ -20,7 +20,7 @@ Participants of this network received seed mixtures of c. 200 natural accessions
 {% include map_participants_exp_duration.html %} 
 
 
-Every year, participants sampled plant material (one flower per successful individual) used for genome pool-sequencing throughout their reproductive stage which allowed us to track changes in the abundances of alleles and accessions. Coupled with weather and soil data, we aim to unravel the process of adaptation to different climates by directly observing it in time.
+Every year, participants sampled plant material (one flower per successful individual) used for genome pool-sequencing throughout their reproductive stage which allowed us to track changes in the abundances of alleles and accessions (see [*Publications*](http://grene-net.org/Publications/)). Coupled with weather and soil data, we aim to unravel the process of adaptation to different climates by directly observing it in time.
 
 
 Exemplary evolution experiment plot with Arabidopsis thaliana plants
@@ -41,6 +41,10 @@ Photo of the study site in Tubingen, Germany (2017)
 And the number of flower samples collected across the years.
 
 {% include map_participants_number_flowers_collected.html %} 
+
+
+Over the last years, 2019-on, we have been whole-genome sequencing over 2500 samples from GrENE-net participants and developed computational methods to efficiently analyze allele frequencies over time and space (see [*Publications*](http://grene-net.org/publications/) and [*News*](http://grene-net.org/news/)). Metadata and genomic data will be available soon under the [*Data center tab*](http://grene-net.org/publications/).
+
 
 <!-- {% include flowers_collected_across_years.html %}  -->
 
