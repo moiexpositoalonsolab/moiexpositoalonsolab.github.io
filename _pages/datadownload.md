@@ -31,8 +31,8 @@ All the metadata relevant to the GrENE-net project can be found in the [GreneR P
 | Climate Data from ecotypes    |    <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.clim.tsv'>Climate Data Download</a>      |
 | Sites Data    |    <a id="raw-url" href='https://github.com/moiexpositoalonsolab/grene/blob/master/data/sitesinfo.rda'>Sites Data Download</a>      |
 | Climate Data from sites   |     <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/sites.clim.tsv'>Climate Data Download</a>     |
-| Raw counts of map reads per library   |   Soon to come!       |
-| NCBI fastq files   |    Soon to come!      |
-| Fst parameters related to the starting population   |     Soon to come!     |
-| Clean alleles frequencies  |   Soon to come!      |
+| Raw fastq files of all samples   |   Soon to come!       |
+| Allele frequency tables, inferred with HAF-pipe   |    Soon to come!      |
+| Downstream analyses (e.g., FST)   |     Soon to come!     |
+
 
