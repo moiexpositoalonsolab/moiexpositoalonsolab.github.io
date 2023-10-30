@@ -4,14 +4,17 @@
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
+#- url: https://siddharthksah.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+#+ url: https://www.siddharthsah.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 
+#By updating the "url" from https://siddharthksah.github.io to https://www.siddharthsah.com, the issue was resolved successfully.
 # Site Settings
 locale                   : "en-US"
 title                    : "GrENE-net"
 title_separator          : "-"
 name                     : &name ""
 description              : &description "personal description"
-url                      : https://moiexpositoalonsolab.github.io #https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://grene-net.org/ #https://moiexpositoalonsolab.github.io #https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "moiexpositoalonsolab/moiexpositoalonsolab.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
