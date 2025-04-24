@@ -9,30 +9,47 @@ redirect_from:
 
 {% include base_path %}
 
-All the metadata relevant to the GrENE-net project can be found in the [GreneR Package](https://github.com/moiexpositoalonsolab/grene). Here some detailes about the metadata structure: 
+The GrENE-net project provides comprehensive metadata and genomic data through the [GreneR Package](https://github.com/moiexpositoalonsolab/grene). Below is a detailed description of our data structure and available datasets:
 
-![Drag Racing](../images/metadata_erd.png)
+![Data Structure](../images/metadata_erd.png)
 
-- census_data: this table includes meassurments collected by the participants used to estiamte the population size of each plot<br> 
-- samples_data: this table include the record of all the flowers sampled across the years  <br> 
-- fastq_info this table is the input needed to run [grenepipe](https://github.com/moiexpositoalonsolab/grenepipe) from the raw fastq files and calculate different <br> population genetics parameters such as allele frequencies and fst <br> 
-- ecotypes_data: this table includes information about the 230 ecotypes used to create the seed mix planted all over the world <br> 
-- worldclim_ecotypesdata: this table includes climatic variables of all the sites from which each of the ecotypes used in the experiment come from <br> 
-- locations_data: this table includes information about the 45 locations where Arabidopsis were plantes all over the world <br> 
-- worldclim_sitesdata: this table includes climatic variables for all  the sites where Arabidopsis was plantes <br> 
+## Data Structure
 
-## Datasets that you can directly download: 
+Our data is organized into several interconnected tables that capture different aspects of the experiment:
 
-| Name            |  Download                                                             |
-| --------         | ------------------------------------------------------------ |
-| Census Data  |  <a id="raw-url" href="https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/census.tsv">Census Data Download</a>|
-| Samples Data  | <a id="raw-url" href="https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/records.tsv">Samples Data Download</a>|
-| Ecotypes Data    |  <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.tsv'>Ecotypes Data Download</a> |    
-| Climate Data from ecotypes    |    <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.clim.tsv'>Climate Data Download</a>      |
-| Sites Data    |    <a id="raw-url" href='https://github.com/moiexpositoalonsolab/grene/blob/master/data/sitesinfo.rda'>Sites Data Download</a>      |
-| Climate Data from sites   |     <a id="raw-url" href='https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/sites.clim.tsv'>Climate Data Download</a>     |
-| Raw fastq files of all samples   |   Soon to come!       |
-| Allele frequency tables, inferred with HAF-pipe   |    Soon to come!      |
-| Downstream analyses (e.g., FST)   |     Soon to come!     |
+1. **Population Monitoring Data**
+   - `census_data`: Tracks population sizes and growth dynamics across all experimental plots
+   - `samples_data`: Records of all flower samples collected throughout the experiment
+
+2. **Genomic Data Processing**
+   - `fastq_info`: Metadata required for processing raw sequencing data using [grenepipe](https://github.com/moiexpositoalonsolab/grenepipe) (this table is the input needed to run grenepipe from the raw fastq files and calculate different population genetics parameters such as allele frequencies and fst)
+
+3. **Genetic Diversity Data**
+   - `ecotypes_data`: Information about the 230 natural accessions used in the experiment
+   - `worldclim_ecotypesdata`: Climate data from the original collection sites of these accessions
+
+4. **Experimental Site Data**
+   - `locations_data`: Details about the 45 experimental sites worldwide
+   - `worldclim_sitesdata`: Climate data for each experimental site
+
+## Available Datasets
+
+You can directly download the following datasets:
+
+| Dataset | Description | Download |
+|---------|-------------|----------|
+| Census Data | Population size measurements | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/census.tsv) |
+| Samples Data | Flower sampling records | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/records.tsv) |
+| Ecotypes Data | Information about founder accessions | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.tsv) |
+| Climate Data (Ecotypes) | Climate data from collection sites | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.clim.tsv) |
+| Sites Data | Experimental site information | [Download](https://github.com/moiexpositoalonsolab/grene/blob/master/data/sitesinfo.rda) |
+| Climate Data (Sites) | Climate data from experimental sites | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/sites.clim.tsv) |
+
+## Coming Soon
+- Raw FASTQ files from all samples
+- Allele frequency tables (processed with HAF-pipe)
+- Downstream analyses (e.g., FST calculations)
+
+For more detailed information about the data structure and how to use it, please refer to the [GreneR Package documentation](https://github.com/moiexpositoalonsolab/grene).
 
 
