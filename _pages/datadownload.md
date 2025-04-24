@@ -38,8 +38,8 @@ You can directly download the following datasets:
 
 | Dataset | Description | Download |
 |---------|-------------|----------|
-| Census Data | Population size measurements | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/census.tsv) |
-| Samples Data | Flower sampling records | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/records.tsv) |
+| Census Data | Population size measurements across experimental plots | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/census.tsv) |
+| Samples Data | Flower sampling records and metadata | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/records.tsv) |
 | Ecotypes Data | Information about founder accessions | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.tsv) |
 | Climate Data (Ecotypes) | Climate data from collection sites | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.clim.tsv) |
 | Sites Data | Experimental site information | [Download](https://github.com/moiexpositoalonsolab/grene/blob/master/data/sitesinfo.rda) |
@@ -51,5 +51,9 @@ You can directly download the following datasets:
 - Downstream analyses (e.g., FST calculations)
 
 For more detailed information about the data structure and how to use it, please refer to the [GreneR Package documentation](https://github.com/moiexpositoalonsolab/grene).
+
+---
+
+When using our data, please cite the appropriate publications
 
 
