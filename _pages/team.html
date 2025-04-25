@@ -35,17 +35,36 @@ html {
 
 .card {
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  height: 500px; /* Fixed height for all cards */
+  display: flex;
+  flex-direction: column;
 }
 
 .card img {
   width: 100%;
-  height: 300px; /* Fixed height for all images */
-  object-fit: cover; /* This ensures the image covers the area while maintaining aspect ratio */
-  object-position: center; /* Centers the image in its container */
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .container {
   padding: 0 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container h2 {
+  margin: 10px 0;
+}
+
+.container p {
+  margin: 10px 0;
+  flex: 1;
+}
+
+.container form {
+  margin-top: auto;
 }
 
 .container::after, .row::after {
@@ -68,6 +87,7 @@ html {
   text-align: center;
   cursor: pointer;
   width: 100%;
+  margin-top: auto;
 }
 
 .button:hover {
