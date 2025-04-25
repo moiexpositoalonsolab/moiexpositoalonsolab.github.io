@@ -16,5 +16,8 @@ main:
   - title: "Data"
     url: /data/
 
+  - title: "Software"
+    url: /software/
+
 
     
