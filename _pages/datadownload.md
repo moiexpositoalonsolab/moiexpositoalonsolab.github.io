@@ -44,9 +44,10 @@ You can directly download the following datasets:
 | Climate Data (Ecotypes) | Climate data from collection sites | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.clim.tsv) |
 | Sites Data | Experimental site information | [Download](https://github.com/moiexpositoalonsolab/grene/blob/master/data/sitesinfo.rda) |
 | Climate Data (Sites) | Climate data from experimental sites | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/sites.clim.tsv) |
+| Raw FASTQ Data | Raw sequencing data from all samples | [Download](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1256468) |
 
 ## Coming Soon
-- Raw FASTQ files from all samples
+
 - Allele frequency tables (processed with HAF-pipe)
 - Downstream analyses (e.g., FST calculations)
 
