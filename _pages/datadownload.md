@@ -46,10 +46,12 @@ You can directly download the following datasets:
 | Climate Data (Sites) | Climate data from experimental sites | [Download](https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/sites.clim.tsv) |
 | Raw FASTQ Data | Raw sequencing data from all samples | [Download](https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1256468) |
 
-## Coming Soon
+## Zenodo Repositories
 
-- Allele frequency tables (processed with HAF-pipe)
-- Downstream analyses (e.g., FST calculations)
+| Repository | Description | Link |
+|------------|-------------|------|
+| GreneR Package | R package with metadata tables for the GrENE-net experiment (Bellagio & Exposito-Alonso) | [Zenodo](https://zenodo.org/records/17167364) |
+| Supplemental Data & Allele Frequencies | Allele frequency tables, supplemental datasets, and analysis code (Wu et al.) | [Zenodo](https://zenodo.org/records/15360669) |
 
 For more detailed information about the data structure and how to use it, please refer to the [GreneR Package documentation](https://github.com/moiexpositoalonsolab/grene).
 
