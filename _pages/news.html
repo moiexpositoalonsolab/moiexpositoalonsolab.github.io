@@ -15,28 +15,57 @@ redirect_from:
 </head>
 <body>
 {% include grene_nav.html %}
+
 <main class="wrap" style="padding:88px 32px 40px;min-height:62vh">
   <div class="eyebrow" style="margin-bottom:26px">News &amp; updates</div>
   <h1 style="font-family:var(--serif);font-weight:400;font-size:clamp(40px,6vw,80px);line-height:1.0;letter-spacing:-.025em;max-width:16ch">Latest from the network.</h1>
-  <div class="grid3" style="margin-top:56px">
+
+  <!-- OUR BLOG POSTS -->
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-bottom:2px solid var(--green);padding-bottom:16px;flex-wrap:wrap;margin-top:56px">
+    <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(24px,3vw,34px);letter-spacing:-.02em">From the lab</h2>
+    <p style="font-size:14px;color:var(--muted2);margin:0">Field reports &amp; milestones we wrote ourselves</p>
+  </div>
+  <div class="grid3" style="margin-top:28px">
     {% assign posts = site.posts | sort: 'date' | reverse %}
     {% for post in posts %}
     <a class="card" href="{{ post.url | relative_url }}" style="border-radius:16px;padding:26px">
       <div style="display:flex;align-items:center;gap:12px">
-        <span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:4px 9px;border-radius:6px">News</span>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:4px 9px;border-radius:6px">Blog</span>
         <span style="font-family:var(--mono);font-size:12px;color:var(--mono-grey)">{{ post.date | date: "%b %Y" }}</span>
       </div>
-      <h3 style="font-size:23px;line-height:1.18;margin-top:4px">{{ post.title }}</h3>
-      <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+      <h3 style="font-family:var(--serif);font-weight:400;font-size:22px;line-height:1.18;margin-top:4px">{{ post.title }}</h3>
+      <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">{{ post.excerpt | strip_html | truncate: 140 }}</p>
       <div class="readlink">Read more →</div>
     </a>
     {% endfor %}
   </div>
-  <div style="margin-top:40px;display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center">
-    <span style="font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--mono-grey);text-transform:uppercase">In the press</span>
-    <a class="readlink" href="https://news.berkeley.edu/2026/03/26/one-of-a-kind-experiment-tracked-plant-evolution-in-response-to-climate-change-at-30-sites-worldwide/" target="_blank" rel="noopener">UC Berkeley News ↗</a>
-    <a class="readlink" href="https://phys.org/news/2026-03-kind-tracks-evolution-response-climate.html" target="_blank" rel="noopener" style="color:var(--muted2)">Phys.org ↗</a>
-    <a class="readlink" href="https://scienmag.com/global-study-monitors-plant-evolution-across-30-sites-in-response-to-climate-change/" target="_blank" rel="noopener" style="color:var(--muted2)">Scienmag ↗</a>
+
+  <!-- OUTSIDE NEWS & PRESS -->
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-bottom:2px solid var(--green);padding-bottom:16px;flex-wrap:wrap;margin-top:72px">
+    <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(24px,3vw,34px);letter-spacing:-.02em">In the news &amp; press</h2>
+    <p style="font-size:14px;color:var(--muted2);margin:0">Coverage from outside outlets</p>
+  </div>
+  <div class="grid3" style="margin-top:28px">
+    <a class="card" href="https://news.berkeley.edu/2026/03/26/one-of-a-kind-experiment-tracked-plant-evolution-in-response-to-climate-change-at-30-sites-worldwide/" target="_blank" rel="noopener" style="border-radius:16px;padding:24px">
+      <div style="display:flex;align-items:center;gap:12px"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:4px 9px;border-radius:6px">Press</span><span style="font-family:var(--mono);font-size:12px;color:var(--mono-grey)">UC Berkeley · Mar 2026</span></div>
+      <h3 style="font-family:var(--serif);font-weight:400;font-size:20px;line-height:1.2;margin-top:4px">One-of-a-kind experiment tracked plant evolution at 30 sites worldwide</h3>
+      <div class="readlink">Read at Berkeley News ↗</div>
+    </a>
+    <a class="card" href="https://phys.org/news/2026-03-kind-tracks-evolution-response-climate.html" target="_blank" rel="noopener" style="border-radius:16px;padding:24px">
+      <div style="display:flex;align-items:center;gap:12px"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:4px 9px;border-radius:6px">Press</span><span style="font-family:var(--mono);font-size:12px;color:var(--mono-grey)">Phys.org · Mar 2026</span></div>
+      <h3 style="font-family:var(--serif);font-weight:400;font-size:20px;line-height:1.2;margin-top:4px">Tracking plant evolution in response to climate change at 30 sites</h3>
+      <div class="readlink">Read at Phys.org ↗</div>
+    </a>
+    <a class="card" href="https://scienmag.com/global-study-monitors-plant-evolution-across-30-sites-in-response-to-climate-change/" target="_blank" rel="noopener" style="border-radius:16px;padding:24px">
+      <div style="display:flex;align-items:center;gap:12px"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:4px 9px;border-radius:6px">Press</span><span style="font-family:var(--mono);font-size:12px;color:var(--mono-grey)">Scienmag · Mar 2026</span></div>
+      <h3 style="font-family:var(--serif);font-weight:400;font-size:20px;line-height:1.2;margin-top:4px">Global study monitors plant evolution across 30 sites</h3>
+      <div class="readlink">Read at Scienmag ↗</div>
+    </a>
+    <a class="card" href="https://doi.org/10.1126/science.adz0777" target="_blank" rel="noopener" style="border-radius:16px;padding:24px">
+      <div style="display:flex;align-items:center;gap:12px"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:4px 9px;border-radius:6px">Journal</span><span style="font-family:var(--mono);font-size:12px;color:var(--mono-grey)">Science · 2026</span></div>
+      <h3 style="font-family:var(--serif);font-weight:400;font-size:20px;line-height:1.2;margin-top:4px">Rapid adaptation and extinction in synchronized outdoor evolution experiments of Arabidopsis</h3>
+      <div class="readlink">Read at Science ↗</div>
+    </a>
   </div>
 </main>
 {% include grene_footer.html %}
