@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} · GrENE-net</title>
+{% include grene_assets.html %}
+</head>
+<body>
+{% include grene_nav.html %}
+<main class="wrap" style="padding:80px 32px 40px;min-height:62vh">
+  <article class="prose">
+    <div style="text-align:center;margin-bottom:8px"><span style="font-family:var(--mono);font-size:12.5px;letter-spacing:.1em;color:var(--green-mid);text-transform:uppercase">News · {{ page.date | date: "%B %-d, %Y" }}</span></div>
+    <h1 style="text-align:center;margin-bottom:36px;text-wrap:balance">{{ page.title }}</h1>
+    {{ content }}
+    <div style="margin-top:56px;border-top:1px solid var(--line);padding-top:24px">
+      <a class="readlink" href="/news/">← All news &amp; updates</a>
+    </div>
+  </article>
+</main>
+{% include grene_footer.html %}
+</body>
+</html>

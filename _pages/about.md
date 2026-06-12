@@ -1,4 +1,5 @@
 ---
+layout: grene
 permalink: /classic/
 title: "Welcome to the GrENE net Project!"
 excerpt: "About me"

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}GrENE-net</title>
+{% include grene_assets.html %}
+</head>
+<body>
+{% include grene_nav.html %}
+<main class="wrap" style="padding:80px 32px 40px;min-height:62vh">
+  {% if page.title %}<div class="eyebrow" style="margin-bottom:18px;text-align:center">GrENE-net</div>{% endif %}
+  <article class="prose">
+    {{ content }}
+  </article>
+</main>
+{% include grene_footer.html %}
+</body>
+</html>

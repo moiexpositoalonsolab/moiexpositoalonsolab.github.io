@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: grene
 title: "Data Structure and Download"
 permalink: /data/
 author_profile: true

@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: grene
 title: "Software"
 permalink: /software/
 author_profile: true

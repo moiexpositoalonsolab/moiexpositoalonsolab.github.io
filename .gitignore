@@ -8,3 +8,4 @@ Site_pictures_GrENE-net/
 vendor/
 .jekyll-cache/
 .jekyll-metadata
+.bundle/

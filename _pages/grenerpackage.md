@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: grene
 title: "The greneR package"
 permalink: /grenerpackage/
 author_profile: true

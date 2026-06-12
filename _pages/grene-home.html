@@ -658,7 +658,9 @@ document.getElementById('footer-badge').appendChild(buildBadge(30,true));
   });
 })();
 
-show('home');
+var _hash = (location.hash || '').replace('#','');
+show(views[_hash] ? _hash : 'home');
+window.addEventListener('hashchange', function(){ var h=(location.hash||'').replace('#',''); if(views[h]) show(h); });
 </script>
 </body>
 </html>

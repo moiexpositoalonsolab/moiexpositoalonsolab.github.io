@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: grene
 title: ""
 permalink: /abouttheproject/
 author_profile: true
