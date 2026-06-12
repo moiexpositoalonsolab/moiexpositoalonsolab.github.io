@@ -6,6 +6,7 @@ excerpt: ''
 date: 2022-04-02
 venue: 'bioRxiv'
 paperurl: 'https://www.biorxiv.org/content/10.1101/2022.02.02.477408v1'
+authors: 'Lucas Czech, Yunru Peng, Jeffrey P. Spence, Patricia L. M. Lang, Tatiana Bellagio, Julia Hildebrandt, Katrin Fritschi, Rebecca Schwab, Beth A. Rowan, GrENE-net consortium, Detlef Weigel, J.F. Scheepens, François Vasseur, Moisés Expósito-Alonso'
 citation: 'Czech, Lucas; Peng, Yunru; Spence, Jeffrey P; Lang, Patricia L M; Bellagio, Tatiana; Hildebrandt, Julia; Fritschi, Katrin; Schwab, Rebecca; Rowan, Beth A; GrENE-net consortium; Weigel, Detlef; Scheepens, J F; Vasseur, François; Exposito-Alonso, Moises. 2022 
 bioRxiv. http://dx.doi.org/10.1101/2022.02.02.477408'
 ---

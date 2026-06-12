@@ -393,7 +393,7 @@ sitemap: true
       <div style="font-family:var(--mono);font-size:14px;color:var(--green-mid)">{{ pub.date | date: "%Y" }}</div>
       <div>
         <h3 style="font-size:23px;line-height:1.22;margin-bottom:8px;max-width:52ch">{{ pub.title }}</h3>
-        <div style="font-size:14px;color:var(--muted2)">{{ pub.citation | strip_newlines | truncate: 110 }}</div>
+        <div style="font-size:13.5px;line-height:1.5;color:var(--muted2)">{{ pub.authors | default: pub.citation }}</div>
       </div>
       <div style="font-family:var(--mono);font-size:12.5px;color:var(--mono-grey);text-align:right">{{ pub.venue }}</div>
     </a>

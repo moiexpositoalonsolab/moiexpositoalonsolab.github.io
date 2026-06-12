@@ -6,6 +6,7 @@ excerpt: ''
 date: 2022-02-09
 venue: 'Bioinformatics'
 paperurl: 'https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btac600/6687127'
+authors: 'Lucas Czech, Moisés Expósito-Alonso'
 citation: 'grenepipe: A flexible, scalable, and reproducible pipeline to automate variant and frequency calling from sequence reads
 Czech, L., Exposito-Alonso, M.
 Bioinformatics (2022) https://doi.org/10.1093/bioinformatics/btac600'

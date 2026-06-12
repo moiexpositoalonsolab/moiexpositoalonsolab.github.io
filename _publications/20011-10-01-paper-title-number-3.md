@@ -6,6 +6,7 @@ excerpt: ''
 date: 2023-06-20
 venue: 'Bioinformatics'
 paperurl: 'https://academic.oup.com/bioinformatics/article/40/8/btae508/7741639'
+authors: 'Lucas Czech, Jeffrey P. Spence, Moisés Expósito-Alonso'
 citation: 'grenedalf: population genetic statistics for the next generation of pool sequencing
 Lucas Czech, Jeffrey P. Spence, Moisés Expósito-Alonso.
 Bioinformatics (2024) 40(8):btae508'
