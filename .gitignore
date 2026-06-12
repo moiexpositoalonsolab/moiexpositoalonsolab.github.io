@@ -1,2 +1,6 @@
 _site/
 
+# Local design sandbox — never commit/push these
+claude-design/
+Site_pictures_GrENE-net/
+.DS_Store

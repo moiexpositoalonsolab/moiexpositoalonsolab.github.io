@@ -1,0 +1,665 @@
+---
+layout: none
+permalink: /
+title: "GrENE-net"
+sitemap: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GrENE-net — redesign preview (real content)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1714; --green:#14583F; --green-mid:#1F8A5B; --green-bright:#4FC587;
+    --muted1:#41514A; --muted2:#56655D; --muted3:#7A867E; --mono-grey:#8A968E; --faint:#A6B0A8;
+    --bg-soft:#F6F8F7; --bg-soft2:#EEF2EF; --pill:#EEF5F0;
+    --line:#E8EBE9; --line2:#E2E6E3; --line3:#D2D9D4; --line-green:#CFE7DA;
+    --dark:#0C1512;
+    --serif:'Newsreader', serif; --sans:'Hanken Grotesk', sans-serif; --mono:'IBM Plex Mono', monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#fff;font-family:var(--sans);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:#BBE9CF;color:var(--dark)}
+  a{color:inherit}
+  em{font-family:var(--serif);font-style:italic}
+  .wrap{max-width:1240px;margin:0 auto;padding-left:32px;padding-right:32px}
+  .eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.13em;color:var(--green-mid);text-transform:uppercase}
+  h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.02em;margin:0}
+  .h1{font-size:clamp(40px,6vw,80px);line-height:1.0;letter-spacing:-.025em}
+  .lead{font-size:20px;line-height:1.55;color:var(--muted2)}
+  .btn{display:inline-block;background:var(--green);color:#fff;padding:13px 24px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;transition:background .2s}
+  .btn:hover{background:var(--dark)}
+  .btn-ghost{display:inline-block;background:#fff;color:var(--green);border:1px solid var(--line3);padding:13px 24px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;transition:border-color .2s}
+  .btn-ghost:hover{border-color:var(--green)}
+  /* nav */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+  nav.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:16px;padding-bottom:16px}
+  .brand{display:flex;align-items:center;gap:10px;cursor:pointer;flex-shrink:0;white-space:nowrap}
+  .brand span{font-weight:700;font-size:18px;letter-spacing:-.02em}
+  .navlinks{display:flex;align-items:center;gap:2px;flex-shrink:0}
+  .navlink{position:relative;padding:8px 14px;font-size:14px;font-weight:500;cursor:pointer;color:var(--muted1);white-space:nowrap;background:none;border:0;font-family:inherit}
+  .navlink:hover{color:var(--green)}
+  .navlink .ind{position:absolute;left:14px;right:14px;bottom:0;height:2px;background:var(--green);border-radius:2px;display:none}
+  .navlink.active{color:var(--green)}
+  .navlink.active .ind{display:block}
+  .navcta{background:var(--green);color:#fff;padding:9px 17px;border-radius:8px;font-size:13.5px;font-weight:600;cursor:pointer;white-space:nowrap;flex-shrink:0;border:0;font-family:inherit}
+  .navcta:hover{background:var(--dark)}
+  /* sections */
+  .view{display:none}
+  .view.show{display:block}
+  .soft{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .card{border:1px solid var(--line);border-radius:14px;padding:28px;background:#fff;transition:border-color .2s;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:12px}
+  a.card:hover{border-color:var(--green)}
+  .tag{font-family:var(--mono);font-size:12px;color:var(--green-mid)}
+  .readlink{font-size:14px;font-weight:600;color:var(--green)}
+  @media(max-width:900px){
+    .grid4,.grid3,.grid2,.hero-grid,.qgrid{grid-template-columns:1fr !important}
+    .navlinks{display:none}
+  }
+  footer{background:var(--dark);color:rgba(244,247,245,.74)}
+  footer a{color:inherit;text-decoration:none}
+  footer a:hover,footer span:hover{color:var(--green-bright)}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header>
+  <nav class="bar wrap">
+    <div class="brand" data-go="home"><span id="brand-badge" style="width:30px;height:30px;display:inline-flex"></span><span>GrENE-net</span></div>
+    <div class="navlinks">
+      <button class="navlink" data-go="home">Overview<span class="ind"></span></button>
+      <button class="navlink" data-go="network">Network<span class="ind"></span></button>
+      <button class="navlink" data-go="pubs">Publications<span class="ind"></span></button>
+      <button class="navlink" data-go="data">Data<span class="ind"></span></button>
+      <button class="navlink" data-go="software">Software<span class="ind"></span></button>
+    </div>
+    <button class="navcta" data-go="data">Explore the data</button>
+  </nav>
+</header>
+
+<!-- ===================== OVERVIEW ===================== -->
+<main class="view" id="view-home">
+
+  <!-- HERO -->
+  <section class="wrap" style="padding:100px 32px 72px">
+    <div class="eyebrow" style="margin-bottom:30px">Genomics of Rapid Evolution in Novel Environments</div>
+    <div class="hero-grid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center">
+      <div>
+        <h1 class="h1" style="font-size:clamp(44px,6.6vw,96px);max-width:16ch;text-wrap:balance">Real-time evolution, observed at global scale.</h1>
+        <p style="font-size:20px;line-height:1.55;color:var(--muted1);margin:32px 0 0;max-width:54ch">The paradigm that evolution of species is a gradual, slow process has been challenged. With a large network of collaborators, GrENE-net is a coordinated distributed experiment with <em>Arabidopsis thaliana</em>, built to test whether the genetic basis of rapid adaptation is predictable — especially in novel future climates.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:28px">
+          <a class="btn" data-go="data">Explore the data</a>
+          <a class="btn-ghost" data-go="network">About the network</a>
+        </div>
+      </div>
+      <div>
+        <div style="border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg-soft)">
+          <img src="/images/grene/arabidopsis_sl12.jpg" alt="Arabidopsis thaliana" style="width:100%;display:block;aspect-ratio:3/4;object-fit:cover">
+        </div>
+        <div style="font-family:var(--mono);font-size:11px;color:var(--mono-grey);margin-top:10px;text-align:right"><em>Arabidopsis thaliana</em> · Wikimedia Commons</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT BAND -->
+  <section class="soft">
+    <div class="wrap" style="padding:48px 32px;display:grid;grid-template-columns:1fr 1fr 1fr 1.6fr;gap:28px" class="grid4">
+      <div style="border-left:2px solid var(--line-green);padding-left:20px">
+        <div style="font-family:var(--serif);font-size:clamp(30px,2.7vw,44px);line-height:1;color:var(--green)">230</div>
+        <div style="font-size:13.5px;line-height:1.4;color:var(--muted2);margin-top:12px">natural <em>Arabidopsis</em> accessions sown</div>
+      </div>
+      <div style="border-left:2px solid var(--line-green);padding-left:20px">
+        <div style="font-family:var(--serif);font-size:clamp(30px,2.7vw,44px);line-height:1;color:var(--green)">2,500+</div>
+        <div style="font-size:13.5px;line-height:1.4;color:var(--muted2);margin-top:12px">samples whole-genome sequenced</div>
+      </div>
+      <div style="border-left:2px solid var(--line-green);padding-left:20px">
+        <div style="font-family:var(--serif);font-size:clamp(30px,2.7vw,44px);line-height:1;color:var(--green)">2017–22</div>
+        <div style="font-size:13.5px;line-height:1.4;color:var(--muted2);margin-top:12px">seasons of continuous observation</div>
+      </div>
+      <div style="border-left:2px solid var(--line-green);padding-left:20px">
+        <div style="display:flex;gap:30px;align-items:baseline">
+          <div style="font-family:var(--serif);font-size:clamp(30px,2.7vw,44px);line-height:1;color:var(--green)">45</div>
+          <div style="font-family:var(--serif);font-size:clamp(30px,2.7vw,44px);line-height:1;color:var(--green)">17</div>
+          <div style="font-family:var(--serif);font-size:clamp(30px,2.7vw,44px);line-height:1;color:var(--green)">3</div>
+        </div>
+        <div style="font-size:13.5px;line-height:1.4;color:var(--muted2);margin-top:12px">field sites · countries · continents</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHASES -->
+  <section class="wrap" style="padding:88px 32px 104px">
+    <div class="eyebrow" style="margin-bottom:26px">Project phases</div>
+    <div class="grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div style="border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--bg-soft)">
+        <div style="font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mono-grey);text-transform:uppercase;margin-bottom:14px">Phase I</div>
+        <h3 style="font-size:22px;margin-bottom:10px">The field experiment &amp; first sequencing</h3>
+        <p style="font-size:14.5px;line-height:1.55;color:var(--muted1);margin:0">Setting up the distributed field experiment across all sites and pool-sequencing the evolving populations through the first three years.</p>
+        <div style="height:1px;background:var(--line2);margin:18px 0"></div>
+        <div style="display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:var(--green-mid)"><span style="width:7px;height:7px;border-radius:50%;background:var(--green-bright)"></span>2017–2020 · + sequencing</div>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--bg-soft)">
+        <div style="font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mono-grey);text-transform:uppercase;margin-bottom:14px">Phase II</div>
+        <h3 style="font-size:22px;margin-bottom:10px">Five-year evolution &amp; deep sequencing</h3>
+        <p style="font-size:14.5px;line-height:1.55;color:var(--muted1);margin:0">Sequencing the evolved populations through year five, plus individually sequencing frozen seed-bank samples for deeper coverage — resolving the underlying biology of adaptation.</p>
+        <div style="height:1px;background:var(--line2);margin:18px 0"></div>
+        <div style="display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:#A6803A"><span style="width:7px;height:7px;border-radius:50%;background:#D9A441"></span>2017–2022+ · descendant sequencing</div>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--bg-soft)">
+        <div style="font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mono-grey);text-transform:uppercase;margin-bottom:14px">Phase III</div>
+        <h3 style="font-size:22px;margin-bottom:10px">Reciprocal transplants</h3>
+        <p style="font-size:14.5px;line-height:1.55;color:var(--muted1);margin:0">Scope still taking shape — likely reciprocal transplants of the experimentally evolved populations to new sites, directly testing whether adaptation holds when populations move across climates.</p>
+        <div style="height:1px;background:var(--line2);margin:18px 0"></div>
+        <div style="display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:#8A968E"><span style="width:7px;height:7px;border-radius:50%;background:#C5CBC6"></span>in progress &amp; planned</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="soft">
+    <div class="wrap" style="padding:104px 32px">
+    <div class="eyebrow" style="margin-bottom:22px">01 — The experiment</div>
+    <h2 style="font-size:clamp(32px,3.8vw,50px);line-height:1.06;margin-bottom:56px;max-width:22ch">A simple protocol, repeated everywhere, season after season.</h2>
+    <div class="grid4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px">
+      <div style="border-top:1.5px solid var(--green);padding-top:20px">
+        <div style="font-family:var(--mono);font-size:13px;color:var(--green-mid);margin-bottom:14px">01</div>
+        <h3 style="font-size:25px;margin-bottom:12px">Sow</h3>
+        <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0">Participants received seed mixtures of c. 200 natural accessions of <em>Arabidopsis thaliana</em> and sowed them into small replicated outdoor plots in 2017.</p>
+      </div>
+      <div style="border-top:1.5px solid var(--green);padding-top:20px">
+        <div style="font-family:var(--mono);font-size:13px;color:var(--green-mid);margin-bottom:14px">02</div>
+        <h3 style="font-size:25px;margin-bottom:12px">Let it evolve</h3>
+        <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0">The plots have been evolving on their own ever since — adapting to each local climate, generation after generation.</p>
+      </div>
+      <div style="border-top:1.5px solid var(--green);padding-top:20px">
+        <div style="font-family:var(--mono);font-size:13px;color:var(--green-mid);margin-bottom:14px">03</div>
+        <h3 style="font-size:25px;margin-bottom:12px">Sample</h3>
+        <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0">Every year, participants collect plant material — one flower per successful individual — throughout the reproductive stage.</p>
+      </div>
+      <div style="border-top:1.5px solid var(--green);padding-top:20px">
+        <div style="font-family:var(--mono);font-size:13px;color:var(--green-mid);margin-bottom:14px">04</div>
+        <h3 style="font-size:25px;margin-bottom:12px">Sequence</h3>
+        <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0">Pooled samples are whole-genome sequenced to track changes in the abundances of alleles and accessions through time and space.</p>
+      </div>
+    </div>
+
+    <!-- SITE STRIP (real field photos) -->
+    <div style="margin-top:56px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:18px;gap:16px">
+        <div style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--mono-grey);text-transform:uppercase">From the field · sites across the network</div>
+        <div style="display:flex;gap:8px">
+          <button id="strip-prev" style="width:42px;height:42px;border-radius:8px;border:1px solid var(--line3);background:#fff;cursor:pointer;font-size:18px;color:var(--green)">←</button>
+          <button id="strip-next" style="width:42px;height:42px;border-radius:8px;border:1px solid var(--line3);background:#fff;cursor:pointer;font-size:18px;color:var(--green)">→</button>
+        </div>
+      </div>
+      <div id="site-strip" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:8px;scrollbar-width:thin"></div>
+    </div>
+    </div>
+  </section>
+
+  <!-- THE QUESTION + FIGURE (real summary figure) -->
+  <section style="background:#fff">
+    <div class="wrap" style="padding:96px 32px">
+      <div class="eyebrow" style="margin-bottom:26px">02 — From plots to predictions</div>
+      <div class="qgrid" style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;margin-bottom:52px">
+        <div style="display:flex;flex-direction:column;gap:22px">
+          <h2 style="font-size:clamp(24px,2.9vw,38px);line-height:1.06">Is evolution rapid?</h2>
+          <h2 style="font-size:clamp(24px,2.9vw,38px);line-height:1.06">In which climates?</h2>
+          <h2 style="font-size:clamp(24px,2.9vw,38px);line-height:1.06">Can we detect it in the genome?</h2>
+          <h2 style="font-size:clamp(24px,2.9vw,38px);line-height:1.06">Does it help populations survive?</h2>
+        </div>
+        <div>
+          <p style="font-size:18px;line-height:1.62;color:#2E3B34;margin:0">In our <em>Science</em> study, rapid adaptation to climate was possible within 3–5 years where genetic diversity was sufficient. But populations in the hottest environments showed random genetic change rather than adaptation — and went extinct, revealing an evolutionary breaking point under extreme heat.</p>
+        </div>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden">
+        <img src="/images/FigSummaryScience.png" alt="GrENE-net Science summary figure" style="width:100%;display:block">
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-top:24px">
+        <p style="font-family:var(--mono);font-size:12.5px;color:var(--mono-grey);margin:0;max-width:74ch">Summary figure — Wu, Bellagio, Peng et al., <em>Rapid adaptation and extinction in synchronized outdoor evolution experiments of Arabidopsis</em>, Science (2026).</p>
+        <a class="btn" data-go="data" style="flex-shrink:0">Open the data center</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROTOCOLS / ETHICS (real links) -->
+  <section class="soft">
+    <div class="wrap" style="padding:104px 32px">
+    <div class="eyebrow" style="margin-bottom:22px">03 — Documentation</div>
+    <h2 style="font-size:clamp(30px,3.4vw,46px);line-height:1.06;margin-bottom:44px;max-width:24ch">Protocols, policy &amp; ethics.</h2>
+    <div class="grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <a class="card" href="https://docs.google.com/document/d/1HgfTmbjjK6SA6mH916kBzQlJRJXCqWVc6YfpK8VqRXc/edit" target="_blank" rel="noopener">
+        <div class="tag">PROTOCOL</div>
+        <h3 style="font-size:22px">General GrENE-net protocol</h3>
+        <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">The full sowing, sampling and sequencing protocol followed by every participating site.</p>
+        <div class="readlink">Read document →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/1S_t-mv_uTobVVQD3Jy4xFg89vn-JgrEAXXC1cmC2NBQ/edit" target="_blank" rel="noopener">
+        <div class="tag">POLICY</div>
+        <h3 style="font-size:22px">Policy &amp; ethics statement</h3>
+        <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">How material, data and authorship are handled across the distributed network.</p>
+        <div class="readlink">Read document →</div>
+      </a>
+      <a class="card" href="https://docs.google.com/document/d/1hZWsNKu3NvudOqtp4dseGlwC7XDXAEKCujz7NGrLXoc/edit" target="_blank" rel="noopener">
+        <div class="tag">PROTOCOL</div>
+        <h3 style="font-size:22px">Terminating an experiment</h3>
+        <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">Steps to safely conclude a plot and eliminate any trace of planted seeds.</p>
+        <div class="readlink">Read document →</div>
+      </a>
+    </div>
+    <p style="font-size:14.5px;line-height:1.6;color:var(--muted3);margin:32px 0 0;max-width:90ch;border-left:2px solid var(--line-green);padding-left:18px">Note on post-experiment handling: although <em>A. thaliana</em> is native or naturalized everywhere GrENE-net operates, participants grow replicate populations in a controlled area, preferably an institution's grounds free from natural <em>A. thaliana</em>. After the experiment all used soil and plant material is incinerated and a herbicide treatment is applied in a secured perimeter to eliminate any trace of planted seeds.</p>
+    </div>
+  </section>
+
+  <!-- NEWS (real) -->
+  <section style="background:#fff">
+    <div class="wrap" style="padding:96px 32px">
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap">
+        <div>
+          <div class="eyebrow" style="margin-bottom:22px">04 — News</div>
+          <h2 style="font-size:clamp(30px,3.4vw,46px);line-height:1.06">Latest from the network.</h2>
+        </div>
+        <a class="readlink" href="/news/">All updates →</a>
+      </div>
+      <div class="grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+        {% assign posts = site.posts | sort: 'date' | reverse %}
+        {% for post in posts limit:6 %}
+        <a class="card" href="{{ post.url | relative_url }}" style="border-radius:16px;padding:26px">
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:4px 9px;border-radius:6px">News</span>
+            <span style="font-family:var(--mono);font-size:12px;color:var(--mono-grey)">{{ post.date | date: "%b %Y" }}</span>
+          </div>
+          <h3 style="font-size:23px;line-height:1.18;margin-top:4px">{{ post.title }}</h3>
+          <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          <div class="readlink">Read more →</div>
+        </a>
+        {% endfor %}
+      </div>
+      <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center">
+        <span style="font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--mono-grey);text-transform:uppercase">In the press</span>
+        <a class="readlink" href="https://news.berkeley.edu/2026/03/26/one-of-a-kind-experiment-tracked-plant-evolution-in-response-to-climate-change-at-30-sites-worldwide/" target="_blank" rel="noopener">UC Berkeley News ↗</a>
+        <a class="readlink" href="https://phys.org/news/2026-03-kind-tracks-evolution-response-climate.html" target="_blank" rel="noopener" style="color:var(--muted2)">Phys.org ↗</a>
+        <a class="readlink" href="https://scienmag.com/global-study-monitors-plant-evolution-across-30-sites-in-response-to-climate-change/" target="_blank" rel="noopener" style="color:var(--muted2)">Scienmag ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===================== NETWORK ===================== -->
+<main class="view wrap" id="view-network" style="padding:88px 32px">
+  <div class="eyebrow" style="margin-bottom:26px">The Network</div>
+  <h1 class="h1" style="max-width:18ch">A distributed collaboration, one shared experiment.</h1>
+  <p class="lead" style="margin:28px 0 0;max-width:60ch">GrENE-net is set up as a coordinated distributed experiment. Field sites are run by partner labs across continents, all following an identical protocol and feeding a shared sequencing and analysis pipeline.</p>
+
+  <div style="display:flex;gap:48px;margin:56px 0 56px;flex-wrap:wrap">
+    <div><div style="font-family:var(--serif);font-size:54px;line-height:1;color:var(--green)">45</div><div style="font-size:14px;color:var(--muted2);margin-top:8px">field sites worldwide</div></div>
+    <div><div style="font-family:var(--serif);font-size:54px;line-height:1;color:var(--green)">30</div><div style="font-size:14px;color:var(--muted2);margin-top:8px">climate zones spanned</div></div>
+    <div><div style="font-family:var(--serif);font-size:54px;line-height:1;color:var(--green)">2017–22</div><div style="font-size:14px;color:var(--muted2);margin-top:8px">Phase I experiment run</div></div>
+  </div>
+
+  <div style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--mono-grey);text-transform:uppercase;margin-bottom:22px">Co-coordinators</div>
+  <div class="grid4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:48px">
+    <div class="card" style="padding:20px">
+      <div style="width:100%;aspect-ratio:1;border-radius:11px;overflow:hidden;background:var(--bg-soft2);margin-bottom:16px"><img src="/images/grene/people/moi.jpg" alt="Moisés Expósito-Alonso" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="font-size:16px;font-weight:700">Moisés Expósito-Alonso</div>
+      <div style="font-size:13.5px;color:var(--green-mid);margin-top:3px">Co-coordinator · Genomics lead</div>
+    </div>
+    <div class="card" style="padding:20px">
+      <div style="width:100%;aspect-ratio:1;border-radius:11px;overflow:hidden;background:var(--bg-soft2);margin-bottom:16px"><img src="/images/grene/people/niek.jpg" alt="Niek Scheepens" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="font-size:16px;font-weight:700">Niek Scheepens</div>
+      <div style="font-size:13.5px;color:var(--green-mid);margin-top:3px">Co-coordinator</div>
+    </div>
+    <div class="card" style="padding:20px">
+      <div style="width:100%;aspect-ratio:1;border-radius:11px;overflow:hidden;background:var(--bg-soft2);margin-bottom:16px"><img src="/images/grene/people/fran.jpg" alt="François Vasseur" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="font-size:16px;font-weight:700">François Vasseur</div>
+      <div style="font-size:13.5px;color:var(--green-mid);margin-top:3px">Co-coordinator</div>
+    </div>
+  </div>
+
+  <div style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--mono-grey);text-transform:uppercase;margin-bottom:22px">Genome sequencing &amp; data analysis team</div>
+  <div class="grid4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+    <div class="card" style="padding:20px">
+      <div style="width:100%;aspect-ratio:1;border-radius:11px;overflow:hidden;background:var(--bg-soft2);margin-bottom:16px"><img src="/images/grene/people/xing.jpg" alt="Xing Wu" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="font-size:16px;font-weight:700">Xing Wu</div><div style="font-size:13.5px;color:var(--green-mid);margin-top:3px">Sequencing &amp; analysis</div>
+    </div>
+    <div class="card" style="padding:20px">
+      <div style="width:100%;aspect-ratio:1;border-radius:11px;overflow:hidden;background:var(--bg-soft2);margin-bottom:16px"><img src="/images/grene/people/tatiana.jpg" alt="Tatiana Bellagio" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="font-size:16px;font-weight:700">Tatiana Bellagio</div><div style="font-size:13.5px;color:var(--green-mid);margin-top:3px">Sequencing &amp; analysis</div>
+    </div>
+    <div class="card" style="padding:20px">
+      <div style="width:100%;aspect-ratio:1;border-radius:11px;overflow:hidden;background:var(--bg-soft2);margin-bottom:16px"><img src="/images/grene/people/ru.jpg" alt="Yunru Peng" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="font-size:16px;font-weight:700">Yunru Peng</div><div style="font-size:13.5px;color:var(--green-mid);margin-top:3px">Sequencing &amp; analysis</div>
+    </div>
+    <div class="card" style="padding:20px">
+      <div style="width:100%;aspect-ratio:1;border-radius:11px;overflow:hidden;background:var(--bg-soft2);margin-bottom:16px"><img src="/images/grene/people/meixi.jpg" alt="Meixi Lin" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="font-size:16px;font-weight:700">Meixi Lin</div><div style="font-size:13.5px;color:var(--green-mid);margin-top:3px">Methods development</div>
+    </div>
+    <div class="card" style="padding:20px">
+      <div style="width:100%;aspect-ratio:1;border-radius:11px;overflow:hidden;background:var(--bg-soft2);margin-bottom:16px"><img src="/images/grene/people/lucas.jpg" alt="Lucas Czech" style="width:100%;height:100%;object-fit:cover;display:block"></div>
+      <div style="font-size:16px;font-weight:700">Lucas Czech</div><div style="font-size:13.5px;color:var(--green-mid);margin-top:3px">Computational biology</div>
+    </div>
+  </div>
+  <div style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--mono-grey);text-transform:uppercase;margin:64px 0 22px">Participating sites &amp; leads</div>
+  <div id="participants" class="grid4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px"></div>
+
+</main>
+
+<!-- ===================== PUBLICATIONS ===================== -->
+<main class="view wrap" id="view-pubs" style="padding:88px 32px">
+  <div class="eyebrow" style="margin-bottom:26px">Publications</div>
+  <h1 class="h1" style="max-width:16ch">Papers &amp; citations.</h1>
+
+  <div style="margin-top:64px">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:20px;border-bottom:2px solid var(--green);padding-bottom:16px;flex-wrap:wrap">
+      <h2 style="font-size:clamp(26px,3vw,36px)">From the consortium</h2>
+      <p style="font-size:14px;color:var(--muted2);margin:0">Core papers from the GrENE-net collaboration</p>
+    </div>
+    {% assign pubs = site.publications | sort: 'date' | reverse %}
+    {% for pub in pubs %}
+    <a href="{{ pub.paperurl }}" target="_blank" rel="noopener" style="display:grid;grid-template-columns:96px 1fr 160px;gap:28px;padding:26px 0;border-bottom:1px solid var(--line);align-items:baseline;text-decoration:none;color:inherit">
+      <div style="font-family:var(--mono);font-size:14px;color:var(--green-mid)">{{ pub.date | date: "%Y" }}</div>
+      <div>
+        <h3 style="font-size:23px;line-height:1.22;margin-bottom:8px;max-width:52ch">{{ pub.title }}</h3>
+        <div style="font-size:14px;color:var(--muted2)">{{ pub.citation | strip_newlines | truncate: 110 }}</div>
+      </div>
+      <div style="font-family:var(--mono);font-size:12.5px;color:var(--mono-grey);text-align:right">{{ pub.venue }}</div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <p style="font-size:15px;color:var(--muted2);margin:40px 0 0"><a class="readlink" href="/publications/">See the full publications list →</a></p>
+</main>
+
+<!-- ===================== DATA ===================== -->
+<main class="view wrap" id="view-data" style="padding:88px 32px">
+  <div class="eyebrow" style="margin-bottom:26px">Data Center</div>
+  <h1 class="h1" style="max-width:16ch">Open data, open methods.</h1>
+  <p class="lead" style="margin:28px 0 0;max-width:58ch">The GrENE-net project provides comprehensive metadata and genomic data through the greneR package — the 2017–2022 Phase I dataset, built for reuse by the wider research community.</p>
+
+  <div style="border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:48px 0 16px;background:#fff">
+    <img src="/images/metadata_erd.png" alt="GrENE-net data structure (entity relationship diagram)" style="width:100%;display:block">
+  </div>
+  <p style="font-family:var(--mono);font-size:12.5px;color:var(--mono-grey);margin:0 0 8px">Data structure — interconnected tables for population monitoring, genomic processing, genetic diversity and site metadata.</p>
+
+  <div style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--mono-grey);text-transform:uppercase;margin:56px 0 22px">Datasets</div>
+  <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+    <a class="card" href="https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/census.tsv" target="_blank" rel="noopener" style="border-radius:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:5px 10px;border-radius:6px">TSV</span><span style="font-family:var(--mono);font-size:11.5px;color:var(--mono-grey)">Open access</span></div>
+      <h3 style="font-size:24px">Census data</h3>
+      <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0;flex:1">Population sizes and growth dynamics across all experimental plots.</p>
+      <div class="readlink">Access dataset →</div>
+    </a>
+    <a class="card" href="https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/records.tsv" target="_blank" rel="noopener" style="border-radius:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:5px 10px;border-radius:6px">TSV</span><span style="font-family:var(--mono);font-size:11.5px;color:var(--mono-grey)">Open access</span></div>
+      <h3 style="font-size:24px">Samples data</h3>
+      <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0;flex:1">Flower sampling records and metadata collected throughout the experiment.</p>
+      <div class="readlink">Access dataset →</div>
+    </a>
+    <a class="card" href="https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/ecotypes.tsv" target="_blank" rel="noopener" style="border-radius:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:5px 10px;border-radius:6px">TSV</span><span style="font-family:var(--mono);font-size:11.5px;color:var(--mono-grey)">Open access</span></div>
+      <h3 style="font-size:24px">Ecotypes data</h3>
+      <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0;flex:1">Information about the 230 natural accessions used as founders, plus their source-climate data.</p>
+      <div class="readlink">Access dataset →</div>
+    </a>
+    <a class="card" href="https://raw.githubusercontent.com/moiexpositoalonsolab/grene/master/data/sites.clim.tsv" target="_blank" rel="noopener" style="border-radius:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:5px 10px;border-radius:6px">TSV / RDA</span><span style="font-family:var(--mono);font-size:11.5px;color:var(--mono-grey)">Open access</span></div>
+      <h3 style="font-size:24px">Site &amp; climate metadata</h3>
+      <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0;flex:1">Geocoordinates, weather and soil measurements for every field site.</p>
+      <div class="readlink">Access dataset →</div>
+    </a>
+    <a class="card" href="https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA1256468" target="_blank" rel="noopener" style="border-radius:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:5px 10px;border-radius:6px">FASTQ</span><span style="font-family:var(--mono);font-size:11.5px;color:var(--mono-grey)">SRA · PRJNA1256468</span></div>
+      <h3 style="font-size:24px">Raw pool-seq reads</h3>
+      <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0;flex:1">Whole-genome sequencing reads from 2,500+ pooled population samples.</p>
+      <div class="readlink">Access dataset →</div>
+    </a>
+    <a class="card" href="https://github.com/moiexpositoalonsolab/grene" target="_blank" rel="noopener" style="border-radius:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:var(--mono);font-size:12px;color:var(--green-mid);background:var(--pill);padding:5px 10px;border-radius:6px">R package</span><span style="font-family:var(--mono);font-size:11.5px;color:var(--mono-grey)">GitHub</span></div>
+      <h3 style="font-size:24px">greneR package</h3>
+      <p style="font-size:15px;line-height:1.55;color:var(--muted2);margin:0;flex:1">Load, analyze and visualize GrENE-net metadata and allele-frequency data. All analysis code, open and reproducible.</p>
+      <div class="readlink">Access package →</div>
+    </a>
+  </div>
+
+  <div style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--mono-grey);text-transform:uppercase;margin:56px 0 22px">Archived on Zenodo</div>
+  <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+    <a class="card" href="https://zenodo.org/records/17167364" target="_blank" rel="noopener">
+      <div class="tag">DOI · Zenodo</div>
+      <h3 style="font-size:22px">greneR package &amp; metadata</h3>
+      <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">Metadata tables for the GrENE-net experiment (Bellagio &amp; Exposito-Alonso).</p>
+      <div class="readlink">Open record →</div>
+    </a>
+    <a class="card" href="https://zenodo.org/records/15360669" target="_blank" rel="noopener">
+      <div class="tag">DOI · Zenodo</div>
+      <h3 style="font-size:22px">Allele frequencies &amp; supplemental data</h3>
+      <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">Allele-frequency tables, supplemental datasets and analysis code (Wu et al.).</p>
+      <div class="readlink">Open record →</div>
+    </a>
+  </div>
+
+</main>
+
+<!-- ===================== SOFTWARE ===================== -->
+<main class="view wrap" id="view-software" style="padding:88px 32px">
+  <div class="eyebrow" style="margin-bottom:26px">Software</div>
+  <h1 class="h1" style="max-width:16ch">Open tools for evolve-and-resequence.</h1>
+  <p class="lead" style="margin:28px 0 0;max-width:60ch">The following software tools were developed and used in GrENE-net — but you can also use them in your own research. All are open-source; contributions and feedback are welcome.</p>
+
+  <div class="grid3" style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:56px">
+    <div class="card">
+      <div class="tag">PIPELINE</div>
+      <h3 style="font-size:24px">grenepipe</h3>
+      <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">A flexible, scalable, reproducible pipeline automating variant calling from raw sequence reads — read trimming, mapping, variant calling and QC, for both individual and pool sequencing.</p>
+      <div style="display:flex;gap:18px"><a class="readlink" href="https://github.com/moiexpositoalonsolab/grenepipe" target="_blank" rel="noopener">GitHub →</a><a class="readlink" href="https://github.com/moiexpositoalonsolab/grenepipe/wiki" target="_blank" rel="noopener" style="color:var(--muted2)">Docs →</a></div>
+    </div>
+    <div class="card">
+      <div class="tag">TOOLKIT</div>
+      <h3 style="font-size:24px">grenedalf</h3>
+      <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">A toolkit for population-genetic statistics from pool-sequenced samples, designed for evolve-and-resequence experiments — efficient implementations of common analyses.</p>
+      <div style="display:flex;gap:18px"><a class="readlink" href="https://github.com/moiexpositoalonsolab/grenedalf" target="_blank" rel="noopener">GitHub →</a><a class="readlink" href="https://github.com/moiexpositoalonsolab/grenedalf/wiki" target="_blank" rel="noopener" style="color:var(--muted2)">Docs →</a></div>
+    </div>
+    <div class="card">
+      <div class="tag">METHOD</div>
+      <h3 style="font-size:24px">HapFIRE</h3>
+      <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">Haplotype-based inference of recombination events, designed to work with pool-sequencing data — illuminating recombination patterns and their impact on genetic diversity.</p>
+      <div style="display:flex;gap:18px"><a class="readlink" href="https://github.com/moiexpositoalonsolab/HapFIRE" target="_blank" rel="noopener">GitHub →</a><a class="readlink" href="https://github.com/moiexpositoalonsolab/HapFIRE/wiki" target="_blank" rel="noopener" style="color:var(--muted2)">Docs →</a></div>
+    </div>
+  </div>
+
+  <div style="font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--mono-grey);text-transform:uppercase;margin:64px 0 22px">R package</div>
+  <div class="grid2" style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+    <div class="card">
+      <div class="tag">R PACKAGE</div>
+      <h3 style="font-size:24px">greneR</h3>
+      <p style="font-size:14.5px;line-height:1.5;color:var(--muted2);margin:0;flex:1">An R package bundling all the metadata and analysis used in the project, in the spirit of open and reproducible research. Load, analyze and visualize GrENE-net data directly.</p>
+      <div><a class="readlink" href="https://github.com/moiexpositoalonsolab/grene" target="_blank" rel="noopener">GitHub →</a></div>
+    </div>
+  </div>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap" style="padding:72px 32px 40px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px"><span id="footer-badge" style="width:30px;height:30px;display:inline-flex"></span><span style="font-weight:700;font-size:18px;color:#F4F7F5;letter-spacing:-.02em">GrENE-net</span></div>
+      <p style="font-size:14.5px;line-height:1.6;max-width:40ch;margin:0">Genomics of Rapid Evolution in Novel Environments — a coordinated, distributed evolution experiment with <em>Arabidopsis thaliana</em>.</p>
+    </div>
+    <div>
+      <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(244,247,245,.42);text-transform:uppercase;margin-bottom:16px">Project</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+        <span style="cursor:pointer" data-go="home">Overview</span>
+        <span style="cursor:pointer" data-go="network">Network</span>
+        <span style="cursor:pointer" data-go="pubs">Publications</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(244,247,245,.42);text-transform:uppercase;margin-bottom:16px">Resources</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+        <span style="cursor:pointer" data-go="data">Data center</span>
+        <span style="cursor:pointer" data-go="software">Software</span>
+        <a href="https://github.com/moiexpositoalonsolab/grene" target="_blank" rel="noopener">greneR package</a>
+        <a href="https://grene-net.org/news/" target="_blank" rel="noopener">News</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:rgba(244,247,245,.42);text-transform:uppercase;margin-bottom:16px">Follow</div>
+      <div style="display:flex;flex-direction:column;gap:11px;font-size:14.5px">
+        <a href="https://twitter.com/grene_net" target="_blank" rel="noopener">Twitter / X ↗</a>
+        <a href="https://github.com/moiexpositoalonsolab/grene" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://grene-net.org/feed.xml" target="_blank" rel="noopener">RSS feed ↗</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(244,247,245,.1)">
+    <div class="wrap" style="padding:22px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-family:var(--mono);font-size:12px;color:rgba(244,247,245,.48)">
+      <span>© 2026 GrENE-net · A worldwide collaboration</span>
+      <span>Phase I · 2017–2022</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- view switching ----------
+var views = {home:'view-home', network:'view-network', pubs:'view-pubs', data:'view-data', software:'view-software'};
+function show(view){
+  for(var k in views){ document.getElementById(views[k]).classList.toggle('show', k===view); }
+  document.querySelectorAll('.navlink').forEach(function(b){ b.classList.toggle('active', b.dataset.go===view); });
+  window.scrollTo(0,0);
+}
+document.addEventListener('click', function(e){
+  var t = e.target.closest('[data-go]');
+  if(t){ e.preventDefault(); show(t.dataset.go); }
+});
+
+// ---------- site strip ----------
+(function(){
+  var strip = document.getElementById('site-strip');
+  var sites = [
+    {f:'tubingen.jpg', c:'Tübingen', k:'Germany'},
+    {f:'tray.jpg', c:'Experiment plot', k:'A. thaliana field tray'},
+    {f:'madrid.jpg', c:'Madrid', k:'Spain · Site 5'},
+    {f:'caldes.jpg', c:'Caldes de Montbui', k:'Spain · Site 6'},
+    {f:'grazalema.jpg', c:'Grazalema', k:'Spain · Site 4'},
+    {f:'mallorca.jpg', c:'Mallorca', k:'Spain · Site 32'},
+    {f:'lesvos.jpg', c:'Lesvos', k:'Greece · Site 43'},
+    {f:'elva.jpg', c:'Elva', k:'Estonia · Site 27'},
+    {f:'bergen.jpg', c:'Bergen', k:'Norway · Site 37'},
+    {f:'wuerzburg.jpg', c:'Würzburg', k:'Germany · Site 46'},
+    {f:'potsdam.jpg', c:'Potsdam-Golm', k:'Germany · Site 47'},
+    {f:'warsaw.jpg', c:'Warsaw', k:'Poland · Site 42'},
+    {f:'utrecht.jpg', c:'Utrecht', k:'Netherlands · Site 57'},
+    {f:'duke.jpg', c:'Duke', k:'USA · Site 28'}
+  ];
+  sites.forEach(function(s){
+    var fig=document.createElement('figure');
+    fig.style.cssText='flex:0 0 320px;scroll-snap-align:start;margin:0';
+    fig.innerHTML='<div style="aspect-ratio:4/3;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--bg-soft2)"><img src="/images/grene/sites/'+s.f+'" loading="lazy" alt="'+s.c+'" style="width:100%;height:100%;object-fit:cover;display:block"></div>'+
+      '<figcaption style="display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:10px"><span style="font-size:15px;font-weight:600">'+s.c+'</span><span style="font-family:\'IBM Plex Mono\',monospace;font-size:11.5px;color:#8A968E">'+s.k+'</span></figcaption>';
+    strip.appendChild(fig);
+  });
+  var step=336;
+  document.getElementById('strip-next').onclick=function(){ strip.scrollBy({left:step,behavior:'smooth'}); };
+  document.getElementById('strip-prev').onclick=function(){ strip.scrollBy({left:-step,behavior:'smooth'}); };
+})();
+
+// ---------- brand badge (ported from the prototype's evolution-trajectory mark) ----------
+function buildBadge(size, dark){
+  var NS='http://www.w3.org/2000/svg';
+  function rng(seed){ var s=seed%233280; if(s<=0)s+=233280; return function(){ s=(s*9301+49297)%233280; return s/233280; }; }
+  var r=rng(31), startX=20, startY=53, M=34;
+  var grayLine = dark?'rgba(244,247,245,0.30)':'#C2C6C1';
+  var greenLine = dark?'#6BBE4D':'#5BA63F';
+  var svg=document.createElementNS(NS,'svg');
+  svg.setAttribute('viewBox','0 0 100 100'); svg.setAttribute('width',size); svg.setAttribute('height',size);
+  svg.style.display='block'; svg.style.overflow='visible';
+  function circle(r2,stroke,w){ var c=document.createElementNS(NS,'circle'); c.setAttribute('cx',50); c.setAttribute('cy',50); c.setAttribute('r',r2); c.setAttribute('fill','none'); c.setAttribute('stroke',stroke); c.setAttribute('stroke-width',w); svg.appendChild(c); }
+  circle(48, dark?'rgba(244,247,245,0.16)':'#DBDED9', 1);
+  circle(45, dark?'rgba(244,247,245,0.42)':'#7C817C', 1.8);
+  for(var j=0;j<M;j++){
+    var hero=j===M-1, x=startX, y=startY, d='M '+startX+' '+startY, s;
+    if(hero){
+      for(s=1;s<=7;s++){ x=startX+(84-startX)*(s/7); var climb=startY+(20-startY)*(s/7); y=climb+(r()-0.5)*6; d+=' L '+x.toFixed(1)+' '+Math.max(15,Math.min(88,y)).toFixed(1); }
+    } else {
+      var ex=52+r()*35, ey=startY+(r()-0.5)*1.7*(ex-startX), steps=8+Math.floor(r()*5);
+      for(s=1;s<=steps;s++){ var f=s/steps; x=startX+(ex-startX)*f; y=startY+(ey-startY)*f+(r()-0.5)*15*f; var dx=x-50,dy=y-50,rr=Math.sqrt(dx*dx+dy*dy); if(rr>43){x=50+dx*43/rr;y=50+dy*43/rr;} d+=' L '+x.toFixed(1)+' '+y.toFixed(1); }
+    }
+    var p=document.createElementNS(NS,'path');
+    p.setAttribute('d',d); p.setAttribute('fill','none'); p.setAttribute('stroke',hero?greenLine:grayLine);
+    p.setAttribute('stroke-width',hero?3:1.25); p.setAttribute('stroke-linecap','round'); p.setAttribute('stroke-linejoin','round');
+    p.setAttribute('opacity',hero?1:0.9); svg.appendChild(p);
+  }
+  return svg;
+}
+document.getElementById('brand-badge').appendChild(buildBadge(30,false));
+document.getElementById('footer-badge').appendChild(buildBadge(30,true));
+
+// ---------- participants grid ----------
+(function(){
+  var host = document.getElementById('participants');
+  if(!host) return;
+  var P = [
+    {n:'Niek Scheepens', s:'Botanical Garden, Univ. Tübingen', img:'/images/grene/people/niek.jpg'},
+    {n:'François Vasseur', s:'CEFE experimental field (CNRS)', img:'/images/grene/people/fran.jpg'},
+    {n:'Xavier Picó', s:'El Castillejo BG · Grazalema NP', img:'/images/grene/people/pico.jpg'},
+    {n:'Carlos Alonso-Blanco', s:'CNB-CSIC', img:'/images/grene/people/alonso-blanco.jpg'},
+    {n:'Arnald Marcer', s:'CREAF', img:'/images/grene/people/marcer.jpg'},
+    {n:'Joy Bergelson', s:'University of Chicago', img:'/images/grene/people/bergelson.jpg'},
+    {n:'Steve Franks', s:'Fordham (Calder Center) · NYBG', img:'/images/grene/people/franks.jpg'},
+    {n:'Tom Juenger', s:'UT Austin — Brackenridge · Pickle', img:'/images/grene/people/juenger.jpg'},
+    {n:'Felix Fritschi', s:'Univ. Missouri, Bradford Research Center', img:'/images/grene/people/fritschi.jpg'},
+    {n:'Jasmin Joshi', s:'University of Potsdam / Botanical Garden', img:'/images/grene/people/joshi.jpg'},
+    {n:'Mohamed Abdelaziz', s:'Sierra Nevada NP — La Cortijuela · Hoya de Pedraza', img:'/images/grene/people/abdelaziz.jpg'},
+    {n:'Peter Tiffin', s:'University of Minnesota', img:'/images/grene/people/tiffin.jpg'},
+    {n:'Remco Stam & Alex Kutschera', s:'Brixen im Thale (AT) · TU Munich, Dürnast', img:'/images/grene/people/stam.jpg'},
+    {n:'Merav Seifan', s:'Sde Boker', img:'/images/grene/people/seifan.jpg'},
+    {n:'Marcelo Sternberg', s:'University of Tel Aviv', img:'/images/grene/people/sternberg.jpg'},
+    {n:'Meelis Pärtel', s:'Private garden near Tartu', img:'/images/grene/people/partel.jpg'},
+    {n:'Kathleen Donohue', s:'Duke University', img:'/images/grene/people/donohue.jpg'},
+    {n:'Rob Colautti', s:"Queen's University", img:'/images/grene/people/colautti.jpg'},
+    {n:'Carlos Lara-Romero', s:'IMEDEA', img:'/images/grene/people/lara-romero.jpg'},
+    {n:'Jake Alexander', s:'Lausanne', img:'/images/grene/people/alexander.jpg'},
+    {n:'Paula Kover', s:'Bathampton', img:'/images/grene/people/kover.jpg'},
+    {n:'Vigdis Vandvik', s:'University of Bergen', img:'/images/grene/people/vandvik.jpg'},
+    {n:'Zuzana Münzbergová', s:'Pruhonice', img:'/images/grene/people/munzbergova.jpg'},
+    {n:'Maciek Wódkiewicz', s:'University of Warsaw', img:'/images/grene/people/wodkiewicz.jpg'},
+    {n:'Panayiotis G. Dimitrakopoulos', s:'Mytilene, Lesbos', img:'/images/grene/people/dimitrakopoulos.jpg'},
+    {n:'José M. Iriondo', s:'Universidad Rey Juan Carlos', img:'/images/grene/people/iriondo.jpg'},
+    {n:'Arthur Korte', s:'Botanical Garden, Univ. Würzburg', img:'/images/grene/people/korte.jpg'},
+    {n:'Karin Köhl', s:'MPI-MP, Golm', img:'/images/grene/people/kohl.jpg'},
+    {n:'Steve Keller', s:'University of Vermont', img:'/images/grene/people/keller.jpg'},
+    {n:'Marc Stift', s:'BoGa Konstanz', img:'/images/grene/people/stift.jpg'},
+    {n:'John Stinchcombe', s:'Koffler Reserve · University of Toronto', img:'/images/grene/people/stinchcombe.jpg'},
+    {n:'Walter Durka', s:'Bad Lauchstädt', img:'/images/grene/people/durka.jpg'},
+    {n:'Marcel Quint', s:'MLU Halle, Crop Physiology', img:'/images/grene/people/quint.jpg'},
+    {n:'Juliette de Meaux', s:'University of Cologne', img:'/images/grene/people/demeaux.jpg'},
+    {n:'Angela Hancock', s:'MPIPZ, Cologne', img:'/images/grene/people/hancock.jpg'},
+    {n:'Irène Till-Bottraud', s:'Saint Just en Chevalet', img:'/images/grene/people/till-bottraud.jpg'},
+    {n:'Anne Muola', s:'Parainen', img:'/images/grene/people/muola.jpg'},
+    {n:'Martijn van Zanten', s:'Utrecht University Botanical Garden', img:'/images/grene/people/vanzanten.jpg'},
+    {n:'Jean-Gabriel Valay', s:'Station alpine Joseph Fourier, Lautaret', img:'/images/grene/people/valay.jpg'},
+    {n:'Annie Schmitt', s:'UC Davis', img:'/images/grene/people/schmitt.jpg'}
+  ];
+  function initials(name){ return name.replace(/&.*$/,'').split(/\s+/).filter(Boolean).slice(0,2).map(function(w){return w[0];}).join('').toUpperCase(); }
+  P.forEach(function(p){
+    var card=document.createElement('div');
+    card.className='card';
+    card.style.cssText='padding:14px;flex-direction:row;align-items:center;gap:12px';
+    var av = p.img
+      ? '<div style="width:46px;height:46px;border-radius:50%;overflow:hidden;flex-shrink:0;background:#EEF2EF"><img src="'+p.img+'" alt="'+p.n+'" style="width:100%;height:100%;object-fit:cover;display:block"></div>'
+      : '<div style="width:46px;height:46px;border-radius:50%;flex-shrink:0;background:#E4EFE8;color:#14583F;display:flex;align-items:center;justify-content:center;font-family:\'IBM Plex Mono\',monospace;font-size:14px;font-weight:500">'+initials(p.n)+'</div>';
+    card.innerHTML=av+'<div style="min-width:0"><div style="font-size:14px;font-weight:700;line-height:1.2">'+p.n+'</div><div style="font-size:11.5px;color:#56655D;margin-top:3px;line-height:1.3">'+p.s+'</div></div>';
+    host.appendChild(card);
+  });
+})();
+
+show('home');
+</script>
+</body>
+</html>

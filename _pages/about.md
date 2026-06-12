@@ -1,18 +1,15 @@
 ---
-permalink: /
+permalink: /classic/
 title: "Welcome to the GrENE net Project!"
 excerpt: "About me"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 The paradigm that evolution of species is a gradual, slow process, has been challenged. There are plenty of examples, from mammals, birds, plants, insects, that evolution can be rapid. However, we are still still struggling to understand whether the genetic underpinnings and architecture of such rapid adaptations are predictable, especially in novel future climates.
 
-With a large network of collaborators (see [*Team*](http://grene-net.org/team/)), we are creating a benchmark experiment to test and predict rapid evolution across climates of multiple continents. This network is called GrENE-net – Genomics of rapid Evolution in Novel Environments – and is set up as a coordinated distributed experiment with _Arabidopsis thaliana_. 
+With a large network of collaborators (see [*Team*](http://grene-net.org/team/)), we are creating a benchmark experiment to test and predict rapid evolution across climates of multiple continents. This network is called GrENE-net – Genomics of rapid Evolution in Novel Environments – and is set up as a coordinated distributed experiment with _Arabidopsis thaliana_.
 
-![Drag Racing](../images/gist.png)
+![GrENE-net overview](../images/FigSummaryScience.png)
 
 
 Participants of this network received seed mixtures of c. 200 natural accessions of _Arabidopsis thaliana_ which they sowed into small replicated plots in 2017, which have been on their own evolving since!. The map of all the samples of growing populations for the first 3 years is below.
