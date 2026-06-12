@@ -4,3 +4,7 @@ _site/
 claude-design/
 Site_pictures_GrENE-net/
 .DS_Store
+
+vendor/
+.jekyll-cache/
+.jekyll-metadata
