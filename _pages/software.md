@@ -25,7 +25,7 @@ A toolkit for population genetic statistics from pool-sequenced samples, specifi
 
 ## HapFIRE
 
-A tool for haplotype-based inference of recombination events, designed to work with pool-sequencing data. It helps in understanding recombination patterns and their impact on genetic diversity.
+A pipeline for highly accurate allele and genotype frequency calling from pool-sequencing data, using founder haplotype linkage information (via a phased founder SNP panel and HARP-based haplotype likelihoods) to improve accuracy over standard pileup-based frequency estimation.
 
 [GitHub Repository](https://github.com/moiexpositoalonsolab/HapFIRE) | [Documentation](https://github.com/moiexpositoalonsolab/HapFIRE/wiki)
 
